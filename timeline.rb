@@ -31,7 +31,7 @@ else
       item = line.split
       item.shift
       conferences[item.first] << "node_#{node_counter}"
-      cluster << "    node_#{node_counter} [shape=box label=\"#{item.join('\n')}\" URL=\"#{url[item.first].first}\" tooltip=\"#{url[item.first].last}\"]\n"
+      cluster << "    node_#{node_counter} [shape=box label=\"#{item.join('\n')}\" URL=\"#{url[item.first].first}\" tooltip=\"#{url[item.first].last}\" target=\"_blank\"]\n"
       node_counter += 1
     # URL
     elsif line.start_with?('[')
