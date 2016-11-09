@@ -1,3 +1,10 @@
+#!/usr/bin/env ruby
+#-----------------------------------------------
+# Timeline
+#-----------------------------------------------
+# Mau Magnaguagno
+#-----------------------------------------------
+
 if ARGV.first == '-h'
   puts 'ruby conferences.rb [filename=README.md] [dir=LR]'
 else

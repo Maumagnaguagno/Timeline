@@ -1,20 +1,18 @@
 # Timeline
-Convert Markdown timeline to Graphviz DOT
-# Timeline
 **Convert Markdown timeline to Graphviz DOT**
 
-![Example timeline](README.md.dot.svg)
+![Example timeline](README.md.dot.png)
 
 The Ruby program converts parts of the Markdown to Graphviz DOT.
 Each ``[]:`` into a link, ``##`` into a cluster, ``-`` of the cluster into a node.
 Links and descriptions must be described before the actual input starts.
 This README is actually a valid input, see the raw file to see the links.
-In order to take full advantage of links and tooltips we recommend SVG output.
+In order to take full advantage of links and tooltips we recommend SVG output (currently not supported by GitHub Markdown), see the result [here](https://maumagnaguagno.github.io/Timeline).
 
-``Shell
+```Shell
 ruby timeline.rb README.md LR
 graphviz\bin\dot.exe README.md.dot -O -T svg
-``
+```
 
 [IJCAI]: http://www.ijcai.org/ "International Joint Conference on Artificial Intelligence"
 [IROS]: http://www.iros.org/ "International Conference on Intelligent Robots and Systems"
