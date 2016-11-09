@@ -14,20 +14,20 @@ ruby timeline.rb README.md LR
 graphviz\bin\dot.exe README.md.dot -O -T svg
 ```
 
-[IJCAI]: http://www.ijcai.org/ "International Joint Conference on Artificial Intelligence"
-[IROS]: http://www.iros.org/ "International Conference on Intelligent Robots and Systems"
-[ECAI]: http://www.ecai2016.org/ "European Conference on Artificial Intelligence"
-[IAT]: http://wibih.unomaha.edu/wi "International Conference on Intelligent Agent Technology"
-[SBGames]: http://sbgames.org/ "Simposio Brasileiro de Games e Entretenimento Digital"
-[ICRA]: http://www.icra2017.org/ "International Conference on Robotics and Automation"
-[SAC]: http://www.sigapp.org/sac/ "Symposium On Applied Computing"
-[AAAI]: http://www.aaai.org/Conferences/conferences.php "Association for the Advancement of Artificial Intelligence"
-[EUMAS]: http://eumas-at2016.webs.upv.es/EUMAS2016.html "European Conference on Multi-Agent Systems"
-[ICAART]: http://www.icaart.org/ "International Conference on Agents and Artificial Intelligence"
-[ICAPS]: http://www.icaps-conference.org/ "International Conference on Automated Planning and Scheduling"
-[AAMAS]: http://www.ifaamas.org/ "International Conference on Autonomous Agents and Multiagent Systems"
-[FLAIRS]: http://www.flairs.com/ "Florida Artificial Intelligence Research Society"
-[KR]: http://www.kr.org/ "International Conference on Principles of Knowledge Representation and Reasoning"
+[IJCAI]: https://www.ijcai.org/ "International Joint Conference on Artificial Intelligence"
+[IROS]: https://www.iros.org/ "International Conference on Intelligent Robots and Systems"
+[ECAI]: https://www.ecai2016.org/ "European Conference on Artificial Intelligence"
+[IAT]: https://wibih.unomaha.edu/wi "International Conference on Intelligent Agent Technology"
+[SBGames]: https://sbgames.org/ "Simposio Brasileiro de Games e Entretenimento Digital"
+[ICRA]: https://www.icra2017.org/ "International Conference on Robotics and Automation"
+[SAC]: https://www.sigapp.org/sac/ "Symposium On Applied Computing"
+[AAAI]: https://www.aaai.org/Conferences/conferences.php "Association for the Advancement of Artificial Intelligence"
+[EUMAS]: https://eumas-at2016.webs.upv.es/EUMAS2016.html "European Conference on Multi-Agent Systems"
+[ICAART]: https://www.icaart.org/ "International Conference on Agents and Artificial Intelligence"
+[ICAPS]: https://www.icaps-conference.org/ "International Conference on Automated Planning and Scheduling"
+[AAMAS]: https://www.ifaamas.org/ "International Conference on Autonomous Agents and Multiagent Systems"
+[FLAIRS]: https://www.flairs.com/ "Florida Artificial Intelligence Research Society"
+[KR]: https://www.kr.org/ "International Conference on Principles of Knowledge Representation and Reasoning"
 
 ## January
 - [IJCAI] Abstracts
