@@ -70,7 +70,7 @@
 <!-- order_node_0&#45;&gt;order_node_1 -->
 <!-- node_0 -->
 <g id="node2" class="node"><title>node_0</title>
-<g id="a_node2"><a xlink:href="http://www.ijcai.org/" xlink:title="International Joint Conference on Artificial Intelligence">
+<g id="a_node2"><a xlink:href="https://www.ijcai.org/" xlink:title="International Joint Conference on Artificial Intelligence">
 <polygon fill="none" stroke="black" points="87,-402.593 16,-402.593 16,-364.593 87,-364.593 87,-402.593"/>
 <text text-anchor="middle" x="51.5" y="-387.393" font-family="Times New Roman,serif" font-size="14.00">IJCAI</text>
 <text text-anchor="middle" x="51.5" y="-372.393" font-family="Times New Roman,serif" font-size="14.00">Abstracts</text>
@@ -79,7 +79,7 @@
 </g>
 <!-- node_1 -->
 <g id="node4" class="node"><title>node_1</title>
-<g id="a_node4"><a xlink:href="http://www.ijcai.org/" xlink:title="International Joint Conference on Artificial Intelligence">
+<g id="a_node4"><a xlink:href="https://www.ijcai.org/" xlink:title="International Joint Conference on Artificial Intelligence">
 <polygon fill="none" stroke="black" points="205,-402.593 123,-402.593 123,-364.593 205,-364.593 205,-402.593"/>
 <text text-anchor="middle" x="164" y="-387.393" font-family="Times New Roman,serif" font-size="14.00">IJCAI</text>
 <text text-anchor="middle" x="164" y="-372.393" font-family="Times New Roman,serif" font-size="14.00">Submission</text>
@@ -95,7 +95,7 @@
 <!-- order_node_1&#45;&gt;order_node_2 -->
 <!-- node_3 -->
 <g id="node8" class="node"><title>node_3</title>
-<g id="a_node8"><a xlink:href="http://www.ijcai.org/" xlink:title="International Joint Conference on Artificial Intelligence">
+<g id="a_node8"><a xlink:href="https://www.ijcai.org/" xlink:title="International Joint Conference on Artificial Intelligence">
 <polygon fill="none" stroke="black" points="441,-452.593 359,-452.593 359,-414.593 441,-414.593 441,-452.593"/>
 <text text-anchor="middle" x="400" y="-437.393" font-family="Times New Roman,serif" font-size="14.00">IJCAI</text>
 <text text-anchor="middle" x="400" y="-422.393" font-family="Times New Roman,serif" font-size="14.00">Notification</text>
@@ -111,7 +111,7 @@
 <!-- order_node_2&#45;&gt;order_node_3 -->
 <!-- node_2 -->
 <g id="node6" class="node"><title>node_2</title>
-<g id="a_node6"><a xlink:href="http://www.iros.org/" xlink:title="International Conference on Intelligent Robots and Systems">
+<g id="a_node6"><a xlink:href="https://www.iros.org/" xlink:title="International Conference on Intelligent Robots and Systems">
 <polygon fill="none" stroke="black" points="323,-318.593 241,-318.593 241,-280.593 323,-280.593 323,-318.593"/>
 <text text-anchor="middle" x="282" y="-303.393" font-family="Times New Roman,serif" font-size="14.00">IROS</text>
 <text text-anchor="middle" x="282" y="-288.393" font-family="Times New Roman,serif" font-size="14.00">Submission</text>
@@ -120,7 +120,7 @@
 </g>
 <!-- node_8 -->
 <g id="node15" class="node"><title>node_8</title>
-<g id="a_node15"><a xlink:href="http://www.iros.org/" xlink:title="International Conference on Intelligent Robots and Systems">
+<g id="a_node15"><a xlink:href="https://www.iros.org/" xlink:title="International Conference on Intelligent Robots and Systems">
 <polygon fill="none" stroke="black" points="619.6,-267.593 537.6,-267.593 537.6,-229.593 619.6,-229.593 619.6,-267.593"/>
 <text text-anchor="middle" x="578.6" y="-252.393" font-family="Times New Roman,serif" font-size="14.00">IROS</text>
 <text text-anchor="middle" x="578.6" y="-237.393" font-family="Times New Roman,serif" font-size="14.00">Notification</text>
@@ -136,7 +136,7 @@
 <!-- order_node_3&#45;&gt;order_node_4 -->
 <!-- node_4 -->
 <g id="node9" class="node"><title>node_4</title>
-<g id="a_node9"><a xlink:href="http://www.ecai2016.org/" xlink:title="European Conference on Artificial Intelligence">
+<g id="a_node9"><a xlink:href="https://www.ecai2016.org/" xlink:title="European Conference on Artificial Intelligence">
 <polygon fill="none" stroke="black" points="441,-318.593 359,-318.593 359,-280.593 441,-280.593 441,-318.593"/>
 <text text-anchor="middle" x="400" y="-303.393" font-family="Times New Roman,serif" font-size="14.00">ECAI</text>
 <text text-anchor="middle" x="400" y="-288.393" font-family="Times New Roman,serif" font-size="14.00">Submission</text>
@@ -145,7 +145,7 @@
 </g>
 <!-- node_6 -->
 <g id="node13" class="node"><title>node_6</title>
-<g id="a_node13"><a xlink:href="http://www.ecai2016.org/" xlink:title="European Conference on Artificial Intelligence">
+<g id="a_node13"><a xlink:href="https://www.ecai2016.org/" xlink:title="European Conference on Artificial Intelligence">
 <polygon fill="none" stroke="black" points="619.6,-323.593 537.6,-323.593 537.6,-285.593 619.6,-285.593 619.6,-323.593"/>
 <text text-anchor="middle" x="578.6" y="-308.393" font-family="Times New Roman,serif" font-size="14.00">ECAI</text>
 <text text-anchor="middle" x="578.6" y="-293.393" font-family="Times New Roman,serif" font-size="14.00">Notification</text>
@@ -159,7 +159,7 @@
 </g>
 <!-- node_5 -->
 <g id="node10" class="node"><title>node_5</title>
-<g id="a_node10"><a xlink:href="http://wibih.unomaha.edu/wi" xlink:title="International Conference on Intelligent Agent Technology">
+<g id="a_node10"><a xlink:href="https://wibih.unomaha.edu/wi" xlink:title="International Conference on Intelligent Agent Technology">
 <polygon fill="none" stroke="black" points="441,-396.593 359,-396.593 359,-358.593 441,-358.593 441,-396.593"/>
 <text text-anchor="middle" x="400" y="-381.393" font-family="Times New Roman,serif" font-size="14.00">IAT</text>
 <text text-anchor="middle" x="400" y="-366.393" font-family="Times New Roman,serif" font-size="14.00">Submission</text>
@@ -168,7 +168,7 @@
 </g>
 <!-- node_7 -->
 <g id="node14" class="node"><title>node_7</title>
-<g id="a_node14"><a xlink:href="http://wibih.unomaha.edu/wi" xlink:title="International Conference on Intelligent Agent Technology">
+<g id="a_node14"><a xlink:href="https://wibih.unomaha.edu/wi" xlink:title="International Conference on Intelligent Agent Technology">
 <polygon fill="none" stroke="black" points="619.6,-401.593 537.6,-401.593 537.6,-363.593 619.6,-363.593 619.6,-401.593"/>
 <text text-anchor="middle" x="578.6" y="-386.393" font-family="Times New Roman,serif" font-size="14.00">IAT</text>
 <text text-anchor="middle" x="578.6" y="-371.393" font-family="Times New Roman,serif" font-size="14.00">Notification</text>
@@ -188,7 +188,7 @@
 <!-- order_node_6&#45;&gt;order_node_7 -->
 <!-- node_9 -->
 <g id="node17" class="node"><title>node_9</title>
-<g id="a_node17"><a xlink:href="http://sbgames.org/" xlink:title="Simposio Brasileiro de Games e Entretenimento Digital">
+<g id="a_node17"><a xlink:href="https://sbgames.org/" xlink:title="Simposio Brasileiro de Games e Entretenimento Digital">
 <polygon fill="none" stroke="black" points="737.6,-324.093 655.6,-324.093 655.6,-271.093 737.6,-271.093 737.6,-324.093"/>
 <text text-anchor="middle" x="696.6" y="-308.893" font-family="Times New Roman,serif" font-size="14.00">SBGames</text>
 <text text-anchor="middle" x="696.6" y="-293.893" font-family="Times New Roman,serif" font-size="14.00">Abstracts</text>
@@ -198,7 +198,7 @@
 </g>
 <!-- node_10 -->
 <g id="node19" class="node"><title>node_10</title>
-<g id="a_node19"><a xlink:href="http://sbgames.org/" xlink:title="Simposio Brasileiro de Games e Entretenimento Digital">
+<g id="a_node19"><a xlink:href="https://sbgames.org/" xlink:title="Simposio Brasileiro de Games e Entretenimento Digital">
 <polygon fill="none" stroke="black" points="855.6,-319.593 773.6,-319.593 773.6,-281.593 855.6,-281.593 855.6,-319.593"/>
 <text text-anchor="middle" x="814.6" y="-304.393" font-family="Times New Roman,serif" font-size="14.00">SBGames</text>
 <text text-anchor="middle" x="814.6" y="-289.393" font-family="Times New Roman,serif" font-size="14.00">Notification</text>
@@ -216,7 +216,7 @@
 <!-- order_node_8&#45;&gt;order_node_9 -->
 <!-- node_11 -->
 <g id="node21" class="node"><title>node_11</title>
-<g id="a_node21"><a xlink:href="http://www.icra2017.org/" xlink:title="International Conference on Robotics and Automation">
+<g id="a_node21"><a xlink:href="https://www.icra2017.org/" xlink:title="International Conference on Robotics and Automation">
 <polygon fill="none" stroke="black" points="973.6,-177.593 891.6,-177.593 891.6,-139.593 973.6,-139.593 973.6,-177.593"/>
 <text text-anchor="middle" x="932.6" y="-162.393" font-family="Times New Roman,serif" font-size="14.00">ICRA</text>
 <text text-anchor="middle" x="932.6" y="-147.393" font-family="Times New Roman,serif" font-size="14.00">Submission</text>
@@ -225,7 +225,7 @@
 </g>
 <!-- node_24 -->
 <g id="node38" class="node"><title>node_24</title>
-<g id="a_node38"><a xlink:href="http://www.icra2017.org/" xlink:title="International Conference on Robotics and Automation">
+<g id="a_node38"><a xlink:href="https://www.icra2017.org/" xlink:title="International Conference on Robotics and Automation">
 <polygon fill="none" stroke="black" points="1420.2,-74.5933 1338.2,-74.5933 1338.2,-36.5933 1420.2,-36.5933 1420.2,-74.5933"/>
 <text text-anchor="middle" x="1379.2" y="-59.3933" font-family="Times New Roman,serif" font-size="14.00">ICRA</text>
 <text text-anchor="middle" x="1379.2" y="-44.3933" font-family="Times New Roman,serif" font-size="14.00">Notification</text>
@@ -239,7 +239,7 @@
 </g>
 <!-- node_12 -->
 <g id="node22" class="node"><title>node_12</title>
-<g id="a_node22"><a xlink:href="http://www.sigapp.org/sac/" xlink:title="Symposium On Applied Computing">
+<g id="a_node22"><a xlink:href="https://www.sigapp.org/sac/" xlink:title="Symposium On Applied Computing">
 <polygon fill="none" stroke="black" points="973.6,-320.093 891.6,-320.093 891.6,-267.093 973.6,-267.093 973.6,-320.093"/>
 <text text-anchor="middle" x="932.6" y="-304.893" font-family="Times New Roman,serif" font-size="14.00">SAC</text>
 <text text-anchor="middle" x="932.6" y="-289.893" font-family="Times New Roman,serif" font-size="14.00">Abstracts</text>
@@ -249,7 +249,7 @@
 </g>
 <!-- node_18 -->
 <g id="node30" class="node"><title>node_18</title>
-<g id="a_node30"><a xlink:href="http://www.sigapp.org/sac/" xlink:title="Symposium On Applied Computing">
+<g id="a_node30"><a xlink:href="https://www.sigapp.org/sac/" xlink:title="Symposium On Applied Computing">
 <polygon fill="none" stroke="black" points="1209.6,-312.593 1127.6,-312.593 1127.6,-274.593 1209.6,-274.593 1209.6,-312.593"/>
 <text text-anchor="middle" x="1168.6" y="-297.393" font-family="Times New Roman,serif" font-size="14.00">SAC</text>
 <text text-anchor="middle" x="1168.6" y="-282.393" font-family="Times New Roman,serif" font-size="14.00">Notification</text>
@@ -263,7 +263,7 @@
 </g>
 <!-- node_13 -->
 <g id="node23" class="node"><title>node_13</title>
-<g id="a_node23"><a xlink:href="http://www.aaai.org/Conferences/conferences.php" xlink:title="Association for the Advancement of Artificial Intelligence">
+<g id="a_node23"><a xlink:href="https://www.aaai.org/Conferences/conferences.php" xlink:title="Association for the Advancement of Artificial Intelligence">
 <polygon fill="none" stroke="black" points="973.6,-249.093 891.6,-249.093 891.6,-196.093 973.6,-196.093 973.6,-249.093"/>
 <text text-anchor="middle" x="932.6" y="-233.893" font-family="Times New Roman,serif" font-size="14.00">AAAI</text>
 <text text-anchor="middle" x="932.6" y="-218.893" font-family="Times New Roman,serif" font-size="14.00">Abstracts</text>
@@ -273,7 +273,7 @@
 </g>
 <!-- node_17 -->
 <g id="node29" class="node"><title>node_17</title>
-<g id="a_node29"><a xlink:href="http://www.aaai.org/Conferences/conferences.php" xlink:title="Association for the Advancement of Artificial Intelligence">
+<g id="a_node29"><a xlink:href="https://www.aaai.org/Conferences/conferences.php" xlink:title="Association for the Advancement of Artificial Intelligence">
 <polygon fill="none" stroke="black" points="1209.6,-57.5933 1127.6,-57.5933 1127.6,-19.5933 1209.6,-19.5933 1209.6,-57.5933"/>
 <text text-anchor="middle" x="1168.6" y="-42.3933" font-family="Times New Roman,serif" font-size="14.00">AAAI</text>
 <text text-anchor="middle" x="1168.6" y="-27.3933" font-family="Times New Roman,serif" font-size="14.00">Notification</text>
@@ -287,7 +287,7 @@
 </g>
 <!-- node_14 -->
 <g id="node24" class="node"><title>node_14</title>
-<g id="a_node24"><a xlink:href="http://eumas-at2016.webs.upv.es/EUMAS2016.html" xlink:title="European Conference on Multi&#45;Agent Systems">
+<g id="a_node24"><a xlink:href="https://eumas-at2016.webs.upv.es/EUMAS2016.html" xlink:title="European Conference on Multi&#45;Agent Systems">
 <polygon fill="none" stroke="black" points="973.6,-397.593 891.6,-397.593 891.6,-359.593 973.6,-359.593 973.6,-397.593"/>
 <text text-anchor="middle" x="932.6" y="-382.393" font-family="Times New Roman,serif" font-size="14.00">EUMAS</text>
 <text text-anchor="middle" x="932.6" y="-367.393" font-family="Times New Roman,serif" font-size="14.00">Submission</text>
@@ -296,7 +296,7 @@
 </g>
 <!-- node_15 -->
 <g id="node26" class="node"><title>node_15</title>
-<g id="a_node26"><a xlink:href="http://eumas-at2016.webs.upv.es/EUMAS2016.html" xlink:title="European Conference on Multi&#45;Agent Systems">
+<g id="a_node26"><a xlink:href="https://eumas-at2016.webs.upv.es/EUMAS2016.html" xlink:title="European Conference on Multi&#45;Agent Systems">
 <polygon fill="none" stroke="black" points="1091.6,-441.593 1009.6,-441.593 1009.6,-403.593 1091.6,-403.593 1091.6,-441.593"/>
 <text text-anchor="middle" x="1050.6" y="-426.393" font-family="Times New Roman,serif" font-size="14.00">EUMAS</text>
 <text text-anchor="middle" x="1050.6" y="-411.393" font-family="Times New Roman,serif" font-size="14.00">Notification</text>
@@ -312,7 +312,7 @@
 <!-- order_node_9&#45;&gt;order_node_10 -->
 <!-- node_16 -->
 <g id="node27" class="node"><title>node_16</title>
-<g id="a_node27"><a xlink:href="http://www.icaart.org/" xlink:title="International Conference on Agents and Artificial Intelligence">
+<g id="a_node27"><a xlink:href="https://www.icaart.org/" xlink:title="International Conference on Agents and Artificial Intelligence">
 <polygon fill="none" stroke="black" points="1091.6,-363.593 1009.6,-363.593 1009.6,-325.593 1091.6,-325.593 1091.6,-363.593"/>
 <text text-anchor="middle" x="1050.6" y="-348.393" font-family="Times New Roman,serif" font-size="14.00">ICAART</text>
 <text text-anchor="middle" x="1050.6" y="-333.393" font-family="Times New Roman,serif" font-size="14.00">Submission</text>
@@ -321,7 +321,7 @@
 </g>
 <!-- node_23 -->
 <g id="node35" class="node"><title>node_23</title>
-<g id="a_node35"><a xlink:href="http://www.icaart.org/" xlink:title="International Conference on Agents and Artificial Intelligence">
+<g id="a_node35"><a xlink:href="https://www.icaart.org/" xlink:title="International Conference on Agents and Artificial Intelligence">
 <polygon fill="none" stroke="black" points="1209.6,-368.593 1127.6,-368.593 1127.6,-330.593 1209.6,-330.593 1209.6,-368.593"/>
 <text text-anchor="middle" x="1168.6" y="-353.393" font-family="Times New Roman,serif" font-size="14.00">ICAART</text>
 <text text-anchor="middle" x="1168.6" y="-338.393" font-family="Times New Roman,serif" font-size="14.00">Notification</text>
@@ -337,7 +337,7 @@
 <!-- order_node_10&#45;&gt;order_node_11 -->
 <!-- node_19 -->
 <g id="node31" class="node"><title>node_19</title>
-<g id="a_node31"><a xlink:href="http://www.icaps-conference.org/" xlink:title="International Conference on Automated Planning and Scheduling">
+<g id="a_node31"><a xlink:href="https://www.icaps-conference.org/" xlink:title="International Conference on Automated Planning and Scheduling">
 <polygon fill="none" stroke="black" points="1209.6,-256.093 1127.6,-256.093 1127.6,-203.093 1209.6,-203.093 1209.6,-256.093"/>
 <text text-anchor="middle" x="1168.6" y="-240.893" font-family="Times New Roman,serif" font-size="14.00">ICAPS</text>
 <text text-anchor="middle" x="1168.6" y="-225.893" font-family="Times New Roman,serif" font-size="14.00">Abstracts</text>
@@ -347,7 +347,7 @@
 </g>
 <!-- node_25 -->
 <g id="node39" class="node"><title>node_25</title>
-<g id="a_node39"><a xlink:href="http://www.icaps-conference.org/" xlink:title="International Conference on Automated Planning and Scheduling">
+<g id="a_node39"><a xlink:href="https://www.icaps-conference.org/" xlink:title="International Conference on Automated Planning and Scheduling">
 <polygon fill="none" stroke="black" points="1420.2,-242.593 1338.2,-242.593 1338.2,-204.593 1420.2,-204.593 1420.2,-242.593"/>
 <text text-anchor="middle" x="1379.2" y="-227.393" font-family="Times New Roman,serif" font-size="14.00">ICAPS</text>
 <text text-anchor="middle" x="1379.2" y="-212.393" font-family="Times New Roman,serif" font-size="14.00">Notification</text>
@@ -361,7 +361,7 @@
 </g>
 <!-- node_20 -->
 <g id="node32" class="node"><title>node_20</title>
-<g id="a_node32"><a xlink:href="http://www.ifaamas.org/" xlink:title="International Conference on Autonomous Agents and Multiagent Systems">
+<g id="a_node32"><a xlink:href="https://www.ifaamas.org/" xlink:title="International Conference on Autonomous Agents and Multiagent Systems">
 <polygon fill="none" stroke="black" points="1209.6,-185.093 1127.6,-185.093 1127.6,-132.093 1209.6,-132.093 1209.6,-185.093"/>
 <text text-anchor="middle" x="1168.6" y="-169.893" font-family="Times New Roman,serif" font-size="14.00">AAMAS</text>
 <text text-anchor="middle" x="1168.6" y="-154.893" font-family="Times New Roman,serif" font-size="14.00">Abstracts</text>
@@ -371,7 +371,7 @@
 </g>
 <!-- node_26 -->
 <g id="node40" class="node"><title>node_26</title>
-<g id="a_node40"><a xlink:href="http://www.ifaamas.org/" xlink:title="International Conference on Autonomous Agents and Multiagent Systems">
+<g id="a_node40"><a xlink:href="https://www.ifaamas.org/" xlink:title="International Conference on Autonomous Agents and Multiagent Systems">
 <polygon fill="none" stroke="black" points="1420.2,-186.593 1338.2,-186.593 1338.2,-148.593 1420.2,-148.593 1420.2,-186.593"/>
 <text text-anchor="middle" x="1379.2" y="-171.393" font-family="Times New Roman,serif" font-size="14.00">AAMAS</text>
 <text text-anchor="middle" x="1379.2" y="-156.393" font-family="Times New Roman,serif" font-size="14.00">Notification</text>
@@ -385,7 +385,7 @@
 </g>
 <!-- node_21 -->
 <g id="node33" class="node"><title>node_21</title>
-<g id="a_node33"><a xlink:href="http://www.kr.org/" xlink:title="International Conference on Principles of Knowledge Representation and Reasoning">
+<g id="a_node33"><a xlink:href="https://www.kr.org/" xlink:title="International Conference on Principles of Knowledge Representation and Reasoning">
 <polygon fill="none" stroke="black" points="1209.6,-461.093 1127.6,-461.093 1127.6,-408.093 1209.6,-408.093 1209.6,-461.093"/>
 <text text-anchor="middle" x="1168.6" y="-445.893" font-family="Times New Roman,serif" font-size="14.00">KR</text>
 <text text-anchor="middle" x="1168.6" y="-430.893" font-family="Times New Roman,serif" font-size="14.00">Abstracts</text>
@@ -395,7 +395,7 @@
 </g>
 <!-- node_28 -->
 <g id="node43" class="node"><title>node_28</title>
-<g id="a_node43"><a xlink:href="http://www.kr.org/" xlink:title="International Conference on Principles of Knowledge Representation and Reasoning">
+<g id="a_node43"><a xlink:href="https://www.kr.org/" xlink:title="International Conference on Principles of Knowledge Representation and Reasoning">
 <polygon fill="none" stroke="black" points="1538.2,-326.593 1456.2,-326.593 1456.2,-288.593 1538.2,-288.593 1538.2,-326.593"/>
 <text text-anchor="middle" x="1497.2" y="-311.393" font-family="Times New Roman,serif" font-size="14.00">KR</text>
 <text text-anchor="middle" x="1497.2" y="-296.393" font-family="Times New Roman,serif" font-size="14.00">Notification</text>
@@ -409,7 +409,7 @@
 </g>
 <!-- node_22 -->
 <g id="node34" class="node"><title>node_22</title>
-<g id="a_node34"><a xlink:href="http://www.flairs.com/" xlink:title="Florida Artificial Intelligence Research Society">
+<g id="a_node34"><a xlink:href="https://www.flairs.com/" xlink:title="Florida Artificial Intelligence Research Society">
 <polygon fill="none" stroke="black" points="1209.6,-113.593 1127.6,-113.593 1127.6,-75.5933 1209.6,-75.5933 1209.6,-113.593"/>
 <text text-anchor="middle" x="1168.6" y="-98.3933" font-family="Times New Roman,serif" font-size="14.00">FLAIRS</text>
 <text text-anchor="middle" x="1168.6" y="-83.3933" font-family="Times New Roman,serif" font-size="14.00">Submission</text>
@@ -418,7 +418,7 @@
 </g>
 <!-- node_27 -->
 <g id="node41" class="node"><title>node_27</title>
-<g id="a_node41"><a xlink:href="http://www.flairs.com/" xlink:title="Florida Artificial Intelligence Research Society">
+<g id="a_node41"><a xlink:href="https://www.flairs.com/" xlink:title="Florida Artificial Intelligence Research Society">
 <polygon fill="none" stroke="black" points="1420.2,-130.593 1338.2,-130.593 1338.2,-92.5933 1420.2,-92.5933 1420.2,-130.593"/>
 <text text-anchor="middle" x="1379.2" y="-115.393" font-family="Times New Roman,serif" font-size="14.00">FLAIRS</text>
 <text text-anchor="middle" x="1379.2" y="-100.393" font-family="Times New Roman,serif" font-size="14.00">Notification</text>
