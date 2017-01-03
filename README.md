@@ -10,11 +10,12 @@ This README is actually a valid input, see the raw file to see the links.
 In order to take full advantage of links and tooltips we recommend SVG output (currently not supported by GitHub Markdown), see the result [here](http://maumagnaguagno.github.io/Timeline).
 
 ```Shell
-ruby timeline.rb README.md LR
-graphviz\bin\dot.exe README.md.dot -O -T svg
+ruby timeline.rb README.md LR                   # Generate Left to Right DOT file
+..\graphviz\bin\dot.exe README.md.dot -O -T svg # Generate SVG file
 ```
 
 [IJCAI]: http://www.ijcai.org/ "International Joint Conference on Artificial Intelligence"
+[UAI]: http://auai.org/uai2017/index.php "Conference on Uncertainty in Artificial Intelligence"
 [IROS]: http://www.iros.org/ "International Conference on Intelligent Robots and Systems"
 [ECAI]: http://www.ecai2016.org/ "European Conference on Artificial Intelligence"
 [IAT]: http://wibih.unomaha.edu/wi "International Conference on Intelligent Agent Technology"
@@ -36,6 +37,7 @@ graphviz\bin\dot.exe README.md.dot -O -T svg
 - [IJCAI] Submission
 
 ## March
+- [UAI] Submission
 - [IROS] Submission
 
 ## April
@@ -48,6 +50,7 @@ graphviz\bin\dot.exe README.md.dot -O -T svg
 ## June
 - [ECAI] Notification
 - [IAT] Notification
+- [UAI] Notification
 - [IROS] Notification
 
 ## July
