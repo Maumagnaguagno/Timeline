@@ -29,6 +29,7 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 [AAMAS]: http://www.ifaamas.org/ "International Conference on Autonomous Agents and Multiagent Systems"
 [FLAIRS]: http://www.flairs.com/ "Florida Artificial Intelligence Research Society"
 [KR]: http://www.kr.org/ "International Conference on Principles of Knowledge Representation and Reasoning"
+[ICLP]: http://software.imdea.org/Conferences/ICLP2016/ "International Conference on Logic Programming"
 
 ## January
 - [IJCAI] Abstracts
@@ -44,6 +45,7 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 - [IJCAI] Notification
 - [ECAI] Submission
 - [IAT] Submission
+- [ICLP] Abstracts Submission
 
 ## May
 
@@ -52,6 +54,7 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 - [IAT] Notification
 - [UAI] Notification
 - [IROS] Notification
+- [ICLP] Notification
 
 ## July
 - [SBGames] Abstracts Submission
