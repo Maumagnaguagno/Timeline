@@ -3,11 +3,11 @@
 
 ![Example timeline](README.md.dot.png)
 
-The Ruby program converts parts of the Markdown to Graphviz DOT.
-Each ``[]:`` into a link, ``##`` into a cluster, ``-`` of the cluster into a node.
-Links and descriptions must be described before the actual input starts.
-This README is actually a valid input, see the raw file to see the links.
-In order to take full advantage of links and tooltips we recommend SVG output (currently not supported by GitHub Markdown), see the result [here](http://maumagnaguagno.github.io/Timeline).
+Timeline converts parts of Markdown to Graphviz DOT, which describes graphs.
+Each ``[name]: http://www.website.com "description"`` into a link, ``## name`` into a cluster, ``-`` of a cluster into a node.
+Links and descriptions are expected to defined before usage within nodes.
+This README is actually a valid input, see the [raw](https://raw.githubusercontent.com/Maumagnaguagno/Timeline/master/README.md) file to see the links.
+In order to take full advantage of links and tooltips we recommend SVG output, see the result [here](http://maumagnaguagno.github.io/Timeline).
 
 ```Shell
 ruby timeline.rb README.md LR                   # Generate Left to Right DOT file
