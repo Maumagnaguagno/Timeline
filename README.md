@@ -1,7 +1,7 @@
 # Timeline
 **Convert Markdown timeline to Graphviz DOT**
 
-![Example timeline](README.md.dot.png)
+![Example timeline](https://rawgit.com/Maumagnaguagno/Timeline/master/README.md.dot.svg)
 
 Timeline converts parts of Markdown to Graphviz DOT, which describes graphs.
 Each ``[name]: http://www.website.com "description"`` into a link, ``## name`` into a cluster, ``-`` of a cluster into a node.
