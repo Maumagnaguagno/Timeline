@@ -48,6 +48,7 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 - [ICLP] Abstracts Submission
 
 ## May
+- [KR] Abstracts Submission
 
 ## June
 - [ECAI] Notification
@@ -58,6 +59,7 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 
 ## July
 - [SBGames] Abstracts Submission
+- [KR] Notification
 
 ## August
 - [SBGames] Notification
@@ -77,7 +79,6 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 - [SAC] Notification
 - [ICAPS] Abstracts Submission
 - [AAMAS] Abstracts Submission
-- [KR] Abstracts Submission
 - [FLAIRS] Submission
 - [ICAART] Notification
 
@@ -88,6 +89,3 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 - [ICAPS] Notification
 - [AAMAS] Notification
 - [FLAIRS] Notification
-
-## February
-- [KR] Notification
