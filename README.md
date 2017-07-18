@@ -4,7 +4,7 @@
 ![Example timeline](https://rawgit.com/Maumagnaguagno/Timeline/master/README.md.dot.svg)
 
 Timeline converts parts of Markdown to Graphviz DOT, which describes graphs.
-Each ``[name]: http://www.website.com "description"`` into a link, ``## name`` into a cluster, ``- [name]`` of a cluster into a node.
+Each ``[name]: http://www.website.com "tooltip"`` into a link, ``## name`` into a cluster, ``- [name]`` of a cluster into a node.
 Links are expected to be defined before their respective nodes appear.
 This README is actually a valid input, see the [raw](https://raw.githubusercontent.com/Maumagnaguagno/Timeline/master/README.md) file to see the links.
 In order to take full advantage of links and tooltips we recommend SVG output, see the result [here](http://maumagnaguagno.github.io/Timeline).
