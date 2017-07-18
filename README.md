@@ -23,7 +23,7 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 [ICRA]: http://www.icra2017.org/ "International Conference on Robotics and Automation"
 [SAC]: http://www.sigapp.org/sac/ "Symposium On Applied Computing"
 [AAAI]: http://www.aaai.org/Conferences/conferences.php "Association for the Advancement of Artificial Intelligence"
-[EUMAS]: http://eumas-at2016.webs.upv.es/EUMAS2016.html "European Conference on Multi-Agent Systems"
+[EUMAS]: https://eumas2017.ibisc.univ-evry.fr/ "European Conference on Multi-Agent Systems"
 [ICAART]: http://www.icaart.org/ "International Conference on Agents and Artificial Intelligence"
 [ICAPS]: http://www.icaps-conference.org/ "International Conference on Automated Planning and Scheduling"
 [AAMAS]: http://www.ifaamas.org/ "International Conference on Autonomous Agents and Multiagent Systems"
@@ -68,7 +68,7 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 - [ICRA] Submission
 - [SAC] Abstracts Submission
 - [AAAI] Abstracts Submission
-- [EUMAS] Submission
+- [EUMAS] Abstracts Submission
 
 ## October
 - [EUMAS] Notification
