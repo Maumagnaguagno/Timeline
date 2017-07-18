@@ -15,7 +15,7 @@ else
   conferences = Hash.new {|h,k| h[k] = []}
   url = {}
   cluster = nil
-  node_counter = month_counter = 0
+  node_counter = cluster_counter = 0
   output = "digraph conferences {\n  rankdir=#{dir}\n\n"
   IO.foreach(filename) {|line|
     # Node
@@ -29,8 +29,8 @@ else
     elsif line =~ /^## (.*)$/
       # Close and save previous cluster
       output << cluster << "  }\n\n" if cluster
-      cluster = "  subgraph cluster_#{month_counter} {\n    graph[height=1.65]\n    label=\"#{$1}\"\n    order_node_#{month_counter} [shape=point label=\"\" style=invis]\n"
-      month_counter += 1
+      cluster = "  subgraph cluster_#{cluster_counter} {\n    graph[height=1.65]\n    label=\"#{$1}\"\n    order_node_#{cluster_counter} [shape=point label=\"\" style=invis]\n"
+      cluster_counter += 1
     # URL and tooltip
     elsif line =~ /^\[(.+)\]: ([^\s]+) "([^"]*)"$/
       url[$1] = [$2, $3]
@@ -40,9 +40,9 @@ else
   output << cluster << "  }\n\n" if cluster
   # Add edges between conference parts
   conferences.each_value {|parts| output << '  ' << parts.join(' -> ') << "\n" if parts.size > 1}
-  # Add invisible edges between months to enforce order
+  # Add invisible edges between clusters to enforce order
   output << "\n"
-  month_counter.pred.times {|i| output << "  order_node_#{i} -> order_node_#{i.succ} [style=invis]\n"}
+  cluster_counter.pred.times {|i| output << "  order_node_#{i} -> order_node_#{i.succ} [style=invis]\n"}
   output << '}'
   # Save file
   IO.write("#{filename}.dot", output)
