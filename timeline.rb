@@ -17,7 +17,6 @@ else
   cluster = nil
   node_counter = month_counter = 0
   output = "digraph conferences {\n  rankdir=#{dir}\n\n"
-  # Generate graph based on filename lines starting with "## month" and "- conferenceName description"
   IO.foreach(filename) {|line|
     # Month
     if line.start_with?('##')
@@ -33,9 +32,9 @@ else
       conferences[item.first] << "node_#{node_counter}"
       cluster << "    node_#{node_counter} [shape=box label=\"#{item.join('\n')}\" URL=\"#{url[item.first].first}\" tooltip=\"#{url[item.first].last}\" target=\"_blank\"]\n"
       node_counter += 1
-    # URL
+    # URL and description
     elsif line.start_with?('[')
-      line =~ /^\[(.+)\]: ([^\s]+) "(.*)"/
+      line =~ /^\[(.+)\]: ([^\s]+) "([^"]*)"$/
       url[$1] = [$2, $3]
     end
   }
