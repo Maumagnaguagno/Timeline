@@ -6,7 +6,7 @@
 #-----------------------------------------------
 
 if ARGV.first == '-h'
-  puts 'ruby conferences.rb [filename=README.md] [dir=LR]'
+  puts 'ruby timeline.rb [filename=README.md] [dir=LR]'
 else
   # Arguments
   filename = ARGV.first || 'README.md'
