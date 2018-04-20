@@ -17,10 +17,10 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 [IJCAI]: http://www.ijcai.org/ "International Joint Conference on Artificial Intelligence"
 [UAI]: http://auai.org/ "Conference on Uncertainty in Artificial Intelligence"
 [IROS]: http://www.iros.org/ "International Conference on Intelligent Robots and Systems"
-[ECAI]: http://www.ecai2016.org/ "European Conference on Artificial Intelligence"
+[ECAI]: https://www.ijcai-18.org/ "European Conference on Artificial Intelligence"
 [IAT]: http://wibih.unomaha.edu/wi "International Conference on Intelligent Agent Technology"
 [SBGames]: http://sbgames.org/ "Simposio Brasileiro de Games e Entretenimento Digital"
-[ICRA]: http://www.icra2017.org/ "International Conference on Robotics and Automation"
+[ICRA]: http://www.icra2018.org/ "International Conference on Robotics and Automation"
 [SAC]: http://www.sigapp.org/sac/ "Symposium On Applied Computing"
 [AAAI]: http://www.aaai.org/Conferences/conferences.php "Association for the Advancement of Artificial Intelligence"
 [EUMAS]: https://eumas2017.ibisc.univ-evry.fr/ "European Conference on Multi-Agent Systems"
@@ -29,12 +29,13 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 [AAMAS]: http://www.ifaamas.org/ "International Conference on Autonomous Agents and Multiagent Systems"
 [FLAIRS]: http://www.flairs.com/ "Florida Artificial Intelligence Research Society"
 [KR]: http://www.kr.org/ "International Conference on Principles of Knowledge Representation and Reasoning"
-[ICLP]: http://software.imdea.org/Conferences/ICLP2016/ "International Conference on Logic Programming"
+[ICLP]: https://www.cs.nmsu.edu/ALP/iclp2018/ "International Conference on Logic Programming"
 
 ## January
 - [IJCAI] Abstracts
 
 ## February
+- [ICLP] Abstracts Submission
 - [IJCAI] Submission
 
 ## March
@@ -45,7 +46,7 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 - [IJCAI] Notification
 - [ECAI] Submission
 - [IAT] Submission
-- [ICLP] Abstracts Submission
+- [ICLP] Notification
 
 ## May
 - [KR] Abstracts Submission
@@ -55,7 +56,6 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 - [ECAI] Notification
 - [IAT] Notification
 - [IROS] Notification
-- [ICLP] Notification
 
 ## July
 - [SBGames] Abstracts Submission
