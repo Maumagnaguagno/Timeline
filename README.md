@@ -15,7 +15,7 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 ```
 
 [IJCAI]: http://www.ijcai.org/ "International Joint Conference on Artificial Intelligence"
-[UAI]: http://auai.org/uai2017/index.php "Conference on Uncertainty in Artificial Intelligence"
+[UAI]: http://auai.org/ "Conference on Uncertainty in Artificial Intelligence"
 [IROS]: http://www.iros.org/ "International Conference on Intelligent Robots and Systems"
 [ECAI]: http://www.ecai2016.org/ "European Conference on Artificial Intelligence"
 [IAT]: http://wibih.unomaha.edu/wi "International Conference on Intelligent Agent Technology"
@@ -49,11 +49,11 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 
 ## May
 - [KR] Abstracts Submission
+- [UAI] Notification
 
 ## June
 - [ECAI] Notification
 - [IAT] Notification
-- [UAI] Notification
 - [IROS] Notification
 - [ICLP] Notification
 
