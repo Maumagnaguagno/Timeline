@@ -16,7 +16,7 @@ else
   url = {}
   cluster = nil
   node_counter = cluster_counter = 0
-  output = "digraph timeline {\n  rankdir=#{dir}\n\n"
+  output = "digraph timeline {\n  rankdir=#{dir}\n  nodesep=0.15\n\n"
   IO.foreach(filename) {|line|
     case line
     # Node
@@ -28,7 +28,7 @@ else
     when /^##\s+(.*)$/
       # Close and save previous cluster
       output << cluster << "  }\n\n" if cluster
-      cluster = "  subgraph cluster_#{cluster_counter} {\n    graph[height=1.65]\n    label=\"#{$1}\"\n    order_node_#{cluster_counter} [shape=point label=\"\" style=invis]\n"
+      cluster = "  subgraph cluster_#{cluster_counter} {\n    graph[height=1.65]\n    label=\"#{$1}\"\n    order_node_#{cluster_counter} [shape=point height=0 style=invis]\n"
       cluster_counter += 1
     # URL and tooltip
     when /^\[(.+)\]:\s+([^\s]+)\s+"([^"]*)"$/
