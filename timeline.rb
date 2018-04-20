@@ -18,21 +18,20 @@ else
   node_counter = cluster_counter = 0
   output = "digraph timeline {\n  rankdir=#{dir}\n\n"
   IO.foreach(filename) {|line|
+    case line
     # Node
-    if line.start_with?('-')
-      line.delete!('-[]')
-      item = line.split
-      nodes[item.first] << "node_#{node_counter}"
-      cluster << "    node_#{node_counter} [shape=box label=\"#{item.join('\n')}\" URL=\"#{url[item.first].first}\" tooltip=\"#{url[item.first].last}\" target=\"_blank\"]\n"
+    when /^-\s*\[(.+)\](.*)$/
+      nodes[$1] << "node_#{node_counter}"
+      cluster << "    node_#{node_counter} [shape=box label=\"#{$2.split.unshift($1).join('\n')}\" URL=\"#{url[$1].first}\" tooltip=\"#{url[$1].last}\" target=\"_blank\"]\n"
       node_counter += 1
     # Cluster
-    elsif line =~ /^## (.*)$/
+    when /^##\s+(.*)$/
       # Close and save previous cluster
       output << cluster << "  }\n\n" if cluster
       cluster = "  subgraph cluster_#{cluster_counter} {\n    graph[height=1.65]\n    label=\"#{$1}\"\n    order_node_#{cluster_counter} [shape=point label=\"\" style=invis]\n"
       cluster_counter += 1
     # URL and tooltip
-    elsif line =~ /^\[(.+)\]: ([^\s]+) "([^"]*)"$/
+    when /^\[(.+)\]:\s+([^\s]+)\s+"([^"]*)"$/
       url[$1] = [$2, $3]
     end
   }
