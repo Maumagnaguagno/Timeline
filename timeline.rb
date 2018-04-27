@@ -21,7 +21,7 @@ else
     # Node
     when /^-\s*\[(.+)\](.*)$/
       nodes[$1] << "node_#{node_counter}"
-      output << "    node_#{node_counter} [shape=box label=\"#{$2.split.unshift($1).join('\n')}\" URL=\"#{url[$1].first}\" tooltip=\"#{url[$1].last}\" target=\"_blank\"]\n"
+      output << "    node_#{node_counter} [shape=box label=\"#{$2.split.unshift($1).join('\n')}\" #{url[$1]} target=\"_blank\"]\n"
       node_counter += 1
     # Cluster
     when /^##\s+(.*)$/
@@ -30,8 +30,8 @@ else
       output << "  subgraph cluster_#{cluster_counter} {\n    graph[height=1.65]\n    label=\"#{$1}\"\n    order_node_#{cluster_counter} [shape=point height=0 style=invis]\n"
       cluster_counter += 1
     # URL and tooltip
-    when /^\[(.+)\]:\s+([^\s]+)\s+"([^"]*)"$/
-      url[$1] = [$2, $3]
+    when /^\[(.+)\]:\s+([^\s]+)(?>\s+("[^"]+"))?$/
+      url[$1] = $3 ? "URL=\"#{$2}\" tooltip=#{$3}" : "URL=\"#{$2}\""
     end
   }
   # Close last cluster
