@@ -6,9 +6,11 @@
 Timeline converts parts of Markdown to Graphviz [DOT](https://en.wikipedia.org/wiki/DOT_%28graph_description_language%29 "Graph description language"):
 - ``[node]: http://www.website.com "optional tooltip"`` to a node external link
 - ``## cluster`` to a cluster
-- ``- [node]`` to a node of the last cluster.
+- ``- [node]`` to a node of the last cluster
 
-Links are expected to be defined before their respective nodes appear, while other Markdown elements are ignored.
+Node external links are optional, but are expected to be defined before their respective nodes appear to used.
+Edges between nodes of the same cluster are possible.
+Nodes defined before the first cluster are considered free.
 This README is actually a valid input, open the [raw](https://raw.githubusercontent.com/Maumagnaguagno/Timeline/master/README.md) file to see the links.
 SVG output is recommended to take full advantage of links and tooltips, see the result [here](http://maumagnaguagno.github.io/Timeline).
 
