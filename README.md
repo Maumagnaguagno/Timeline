@@ -8,7 +8,7 @@ Timeline converts parts of Markdown to Graphviz [DOT](https://en.wikipedia.org/w
 - ``## cluster`` to a cluster
 - ``- [node]`` to a node of the last cluster
 
-Node external links are optional, but are expected to be defined before their respective nodes appear to used.
+Node external links are optional, but are expected to be defined before their respective nodes appear.
 Edges between nodes of the same cluster are possible.
 Nodes defined before the first cluster are considered free.
 This README is actually a valid input, open the [raw](https://raw.githubusercontent.com/Maumagnaguagno/Timeline/master/README.md) file to see the links.
