@@ -15,7 +15,7 @@ else
   nodes = Hash.new {|h,k| h[k] = []}
   url = {}
   node_counter = cluster_counter = 0
-  output = "digraph timeline {\n  rankdir=#{dir}\n  nodesep=0.15\n\n"
+  output = "digraph timeline {\n  rankdir=#{dir}\n  nodesep=0.15\n  node [target=_blank]\n\n"
   IO.foreach(filename) {|line|
     case line
     # Node
@@ -31,7 +31,7 @@ else
       cluster_counter += 1
     # URL and tooltip
     when /^\[(.+)\]:\s+([^\s]+)(?>\s+("[^"]+"))?$/
-      url[$1] = " URL=\"#{$2}\"#{" tooltip=#{$3}" if $3} target=\"_blank\""
+      url[$1] = " URL=\"#{$2}\"#{" tooltip=#{$3}" if $3}"
     end
   }
   # Close last cluster

@@ -40,7 +40,7 @@
 <text x="164" y="-174.8">Submission</text></a></g>
 
 <path d="M87.1597,-186C95.2573,-186 104.043,-186 112.668,-186"/>
-<polygon fill="black" points="112.669,-189.5 122.668,-186 112.668,-182.5 112.669,-189.5"/>
+<polygon points="112.669,-189.5 122.668,-186 112.668,-182.5 112.669,-189.5"/>
 
 <g><a xlink:href="https://www.cs.nmsu.edu/ALP/iclp2018/" xlink:title="International Conference on Logic Programming" target="_blank">
 <polygon fill="none" points="205,-155.5 123,-155.5 123,-102.5 205,-102.5 205,-155.5"/>
@@ -54,7 +54,7 @@
 <text x="400" y="-27.8">Notification</text></a></g>
 
 <path d="M205.226,-113.528C245.194,-98.156 306.563,-74.5525 349.5,-58.0386"/>
-<polygon fill="black" points="350.831,-61.2766 358.908,-54.42 348.318,-54.7431 350.831,-61.2766"/>
+<polygon points="350.831,-61.2766 358.908,-54.42 348.318,-54.7431 350.831,-61.2766"/>
 
 <g><a xlink:href="http://www.ijcai.org/" xlink:title="International Joint Conference on Artificial Intelligence" target="_blank">
 <polygon fill="none" points="441,-205 359,-205 359,-167 441,-167 441,-205"/>
@@ -62,7 +62,7 @@
 <text x="400" y="-174.8">Notification</text></a></g>
 
 <path d="M205.226,-186C244.942,-186 305.791,-186 348.686,-186"/>
-<polygon fill="black" points="348.908,-189.5 358.908,-186 348.908,-182.5 348.908,-189.5"/>
+<polygon points="348.908,-189.5 358.908,-186 348.908,-182.5 348.908,-189.5"/>
 
 <g><a xlink:href="http://auai.org/" xlink:title="Conference on Uncertainty in Artificial Intelligence" target="_blank">
 <polygon fill="none" points="323,-321 241,-321 241,-283 323,-283 323,-321"/>
@@ -75,7 +75,7 @@
 <text x="518" y="-360.8">Notification</text></a></g>
 
 <path d="M323.226,-314.033C363.11,-325.965 424.306,-344.271 467.229,-357.111"/>
-<polygon fill="black" points="466.324,-360.494 476.908,-360.007 468.331,-353.787 466.324,-360.494"/>
+<polygon points="466.324,-360.494 476.908,-360.007 468.331,-353.787 466.324,-360.494"/>
 
 <g><a xlink:href="http://www.iros.org/" xlink:title="International Conference on Intelligent Robots and Systems" target="_blank">
 <polygon fill="none" points="323,-272 241,-272 241,-234 323,-234 323,-272"/>
@@ -88,7 +88,7 @@
 <text x="636" y="-178.8">Notification</text></a></g>
 
 <path d="M323.214,-255.188C357.02,-256.276 406.492,-256.106 449,-249 496.389,-241.078 548.359,-223.825 585.288,-210.012"/>
-<polygon fill="black" points="586.705,-213.218 594.814,-206.4 584.223,-206.673 586.705,-213.218"/>
+<polygon points="586.705,-213.218 594.814,-206.4 584.223,-206.673 586.705,-213.218"/>
 
 <g><a xlink:href="https://www.ijcai-18.org/" xlink:title="European Conference on Artificial Intelligence" target="_blank">
 <polygon fill="none" points="441,-107 359,-107 359,-69 441,-69 441,-107"/>
@@ -101,7 +101,7 @@
 <text x="636" y="-80.8">Notification</text></a></g>
 
 <path d="M441.226,-88.6876C480.942,-89.3665 541.791,-90.4067 584.686,-91.1399"/>
-<polygon fill="black" points="584.85,-94.6431 594.908,-91.3147 584.969,-87.6442 584.85,-94.6431"/>
+<polygon points="584.85,-94.6431 594.908,-91.3147 584.969,-87.6442 584.85,-94.6431"/>
 
 <g><a xlink:href="http://wibih.unomaha.edu/wi" xlink:title="International Conference on Intelligent Agent Technology" target="_blank">
 <polygon fill="none" points="441,-156 359,-156 359,-118 441,-118 441,-156"/>
@@ -114,7 +114,7 @@
 <text x="636" y="-129.8">Notification</text></a></g>
 
 <path d="M441.226,-137.688C480.942,-138.367 541.791,-139.407 584.686,-140.14"/>
-<polygon fill="black" points="584.85,-143.643 594.908,-140.315 584.969,-136.644 584.85,-143.643"/>
+<polygon points="584.85,-143.643 594.908,-140.315 584.969,-136.644 584.85,-143.643"/>
 
 <g><a xlink:href="http://www.kr.org/" xlink:title="International Conference on Principles of Knowledge Representation and Reasoning" target="_blank">
 <polygon fill="none" points="559,-341.5 477,-341.5 477,-288.5 559,-288.5 559,-341.5"/>
@@ -128,7 +128,7 @@
 <text x="754" y="-303.8">Notification</text></a></g>
 
 <path d="M559.226,-315C598.942,-315 659.791,-315 702.686,-315"/>
-<polygon fill="black" points="702.908,-318.5 712.908,-315 702.908,-311.5 702.908,-318.5"/>
+<polygon points="702.908,-318.5 712.908,-315 702.908,-311.5 702.908,-318.5"/>
 
 <g><a xlink:href="http://sbgames.org/" xlink:title="Simposio Brasileiro de Games e Entretenimento Digital" target="_blank">
 <polygon fill="none" points="795,-284.5 713,-284.5 713,-231.5 795,-231.5 795,-284.5"/>
@@ -142,7 +142,7 @@
 <text x="872" y="-239.8">Notification</text></a></g>
 
 <path d="M795.246,-255.571C803.433,-255.077 812.144,-254.552 820.632,-254.039"/>
-<polygon fill="black" points="821.055,-257.52 830.826,-253.424 820.633,-250.533 821.055,-257.52"/>
+<polygon points="821.055,-257.52 830.826,-253.424 820.633,-250.533 821.055,-257.52"/>
 
 <g><a xlink:href="http://www.icra2018.org/" xlink:title="International Conference on Robotics and Automation" target="_blank">
 <polygon fill="none" points="1031,-399 949,-399 949,-361 1031,-361 1031,-399"/>
@@ -155,7 +155,7 @@
 <text x="1439" y="-254.8">Notification</text></a></g>
 
 <path d="M1031.17,-386.257C1087.24,-393.448 1191.47,-401.161 1275,-375 1328.08,-358.375 1379.81,-318.567 1410.28,-291.943"/>
-<polygon fill="black" points="1412.78,-294.406 1417.93,-285.147 1408.13,-289.174 1412.78,-294.406"/>
+<polygon points="1412.78,-294.406 1417.93,-285.147 1408.13,-289.174 1412.78,-294.406"/>
 
 <g><a xlink:href="http://www.sigapp.org/sac/" xlink:title="Symposium On Applied Computing" target="_blank">
 <polygon fill="none" points="1031,-349.5 949,-349.5 949,-296.5 1031,-296.5 1031,-349.5"/>
@@ -169,7 +169,7 @@
 <text x="1226" y="-311.8">Notification</text></a></g>
 
 <path d="M1031.23,-323C1070.94,-323 1131.79,-323 1174.69,-323"/>
-<polygon fill="black" points="1174.91,-326.5 1184.91,-323 1174.91,-319.5 1174.91,-326.5"/>
+<polygon points="1174.91,-326.5 1184.91,-323 1174.91,-319.5 1174.91,-326.5"/>
 
 <g><a xlink:href="http://www.aaai.org/Conferences/conferences.php" xlink:title="Association for the Advancement of Artificial Intelligence" target="_blank">
 <polygon fill="none" points="1031,-285.5 949,-285.5 949,-232.5 1031,-232.5 1031,-285.5"/>
@@ -183,7 +183,7 @@
 <text x="1226" y="-262.8">Notification</text></a></g>
 
 <path d="M1031.23,-261.579C1070.94,-264.125 1131.79,-268.025 1174.69,-270.775"/>
-<polygon fill="black" points="1174.7,-274.283 1184.91,-271.43 1175.15,-267.297 1174.7,-274.283"/>
+<polygon points="1174.7,-274.283 1184.91,-271.43 1175.15,-267.297 1174.7,-274.283"/>
 
 <g><a xlink:href="https://eumas2017.ibisc.univ-evry.fr/" xlink:title="European Conference on Multi&#45;Agent Systems" target="_blank">
 <polygon fill="none" points="1031,-209.5 949,-209.5 949,-156.5 1031,-156.5 1031,-209.5"/>
@@ -197,7 +197,7 @@
 <text x="1108" y="-84.8">Notification</text></a></g>
 
 <path d="M1016.31,-156.304C1026.99,-145.815 1040.01,-133.951 1058.45,-120.791"/>
-<polygon fill="black" points="1060.47,-123.648 1066.69,-115.071 1056.48,-117.897 1060.47,-123.648"/>
+<polygon points="1060.47,-123.648 1066.69,-115.071 1056.48,-117.897 1060.47,-123.648"/>
 
 <g><a xlink:href="http://www.icaart.org/" xlink:title="International Conference on Agents and Artificial Intelligence" target="_blank">
 <polygon fill="none" points="1149,-164 1067,-164 1067,-126 1149,-126 1149,-164"/>
@@ -210,7 +210,7 @@
 <text x="1226" y="-23.8">Notification</text></a></g>
 
 <path d="M1149.1,-127.399C1152,-125.177 1154.68,-122.717 1157,-120 1175.24,-98.6134 1158.76,-81.3866 1177,-60 1177.14,-59.8302 1177.29,-59.6614 1177.44,-59.4936"/>
-<polygon fill="black" points="1179.93,-61.9579 1184.9,-52.6012 1175.18,-56.8162 1179.93,-61.9579"/>
+<polygon points="1179.93,-61.9579 1184.9,-52.6012 1175.18,-56.8162 1179.93,-61.9579"/>
 
 <g><a xlink:href="http://www.icaps-conference.org/" xlink:title="International Conference on Automated Planning and Scheduling" target="_blank">
 <polygon fill="none" points="1267,-118.5 1185,-118.5 1185,-65.5 1267,-65.5 1267,-118.5"/>
@@ -224,7 +224,7 @@
 <text x="1439" y="-96.8">Notification</text></a></g>
 
 <path d="M1267.18,-95.0471C1301.5,-97.6495 1351.02,-101.405 1387.92,-104.202"/>
-<polygon fill="black" points="1387.73,-107.698 1397.97,-104.964 1388.26,-100.718 1387.73,-107.698"/>
+<polygon points="1387.73,-107.698 1397.97,-104.964 1388.26,-100.718 1387.73,-107.698"/>
 
 <g><a xlink:href="http://www.ifaamas.org/" xlink:title="International Conference on Autonomous Agents and Multiagent Systems" target="_blank">
 <polygon fill="none" points="1267,-243.5 1185,-243.5 1185,-190.5 1267,-190.5 1267,-243.5"/>
@@ -238,7 +238,7 @@
 <text x="1439" y="-205.8">Notification</text></a></g>
 
 <path d="M1267.18,-217C1301.5,-217 1351.02,-217 1387.92,-217"/>
-<polygon fill="black" points="1387.97,-220.5 1397.97,-217 1387.97,-213.5 1387.97,-220.5"/>
+<polygon points="1387.97,-220.5 1397.97,-217 1387.97,-213.5 1387.97,-220.5"/>
 
 <g><a xlink:href="http://www.flairs.com/" xlink:title="Florida Artificial Intelligence Research Society" target="_blank">
 <polygon fill="none" points="1267,-179 1185,-179 1185,-141 1267,-141 1267,-179"/>
@@ -251,5 +251,5 @@
 <text x="1439" y="-156.8">Notification</text></a></g>
 
 <path d="M1267.18,-161.524C1301.5,-162.825 1351.02,-164.702 1387.92,-166.101"/>
-<polygon fill="black" points="1387.84,-169.601 1397.97,-166.482 1388.11,-162.606 1387.84,-169.601"/>
+<polygon points="1387.84,-169.601 1397.97,-166.482 1388.11,-162.606 1387.84,-169.601"/>
 </g></svg>
