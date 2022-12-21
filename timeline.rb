@@ -30,7 +30,7 @@ else
       output << "  subgraph cluster_#{cluster_counter} {\n    label=\"#{$1}\"\n    order_node_#{cluster_counter} [shape=point height=0 style=invis]\n"
       cluster_counter += 1
     # URL and tooltip
-    when /^\[(.+)\]:\s+([^\s]+)(?>\s+("[^"]+"))?$/
+    when /^\[(.+)\]:\s+(\S+)(?>\s+("[^"]+"))?$/
       url[$1] = " URL=\"#{$2}\"#{" tooltip=#{$3}" if $3}"
     end
   }
