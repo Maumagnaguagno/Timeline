@@ -16,7 +16,7 @@ else
   url = {}
   node_counter = cluster_counter = 0
   output = "digraph timeline {\n  rankdir=#{dir}\n  nodesep=0.15\n  node [target=_blank]\n\n"
-  IO.foreach(filename) {|line|
+  File.foreach(filename) {|line|
     case line
     # Node
     when /^-\s*\[(.+)\](.*)$/
@@ -43,5 +43,5 @@ else
   cluster_counter.pred.times {|i| output << "\n  order_node_#{i} -> order_node_#{i.succ} [style=invis]"}
   output << "\n}"
   # Save file
-  IO.write("#{filename}.dot", output)
+  File.write("#{filename}.dot", output)
 end
