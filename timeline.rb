@@ -19,12 +19,12 @@ else
   File.foreach(filename) {|line|
     case line
     # Node
-    when /^-\s*\[(.+)\](.*)$/
+    when /^-\s*\[(.+)\](.*)/
       nodes[$1] << "node_#{node_counter}"
       output << "    node_#{node_counter} [shape=box label=\"#{$2.split.unshift($1).join('\n')}\"#{url[$1]}]\n"
       node_counter += 1
     # Cluster
-    when /^##\s+(.*)$/
+    when /^##\s+(.*)/
       # Close previous cluster
       output << "  }\n\n" if cluster_counter != 0
       output << "  subgraph cluster_#{cluster_counter} {\n    label=\"#{$1}\"\n    order_node_#{cluster_counter} [shape=point height=0 style=invis]\n"
