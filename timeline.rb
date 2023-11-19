@@ -5,11 +5,11 @@
 # Mau Magnaguagno
 #-----------------------------------------------
 
-if ARGV.first == '-h'
+if ARGV[0] == '-h'
   puts 'ruby timeline.rb [filename=README.md] [dir=LR]'
 else
   # Arguments
-  filename = ARGV.first || 'README.md'
+  filename = ARGV[0] || 'README.md'
   dir = ARGV[1] || 'LR'
   # Setup
   nodes = Hash.new {|h,k| h[k] = []}
