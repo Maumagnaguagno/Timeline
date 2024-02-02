@@ -6,7 +6,7 @@
 Timeline converts parts of Markdown to Graphviz [DOT](https://en.wikipedia.org/wiki/DOT_%28graph_description_language%29 "Graph description language"):
 - ``[node]: http://www.website.com "optional tooltip"`` to a node external link
 - ``## cluster`` to a cluster
-- ``- [node]`` to a node of the last cluster
+- ``- [node] description`` to a node of the cluster
 
 Node external links are optional, but are expected to be defined before their respective nodes appear.
 Edges between nodes of the same cluster are possible.
