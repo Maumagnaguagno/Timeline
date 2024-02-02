@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang=en-us>
+<head>
+  <meta charset=utf-8>
+  <meta name=description content="Convert Markdown timeline to Graphviz DOT.">
+  <title>Timeline</title>
+</head>
+<body>
+<header style=position:fixed;font-family:Arial,sans-serif>
+<h1 style=margin:0>Timeline</h1>
+<button style=position:absolute;right:0 onclick=render()>Generate</button>
+<textarea id=input rows=40 cols=30 style=white-space:pre></textarea>
+<select id="dir" style=display:block;width:100% onchange=render()>
+  <option value="LR">Left-Right</option>
+  <option value="RL">Right-Left</option>
+  <option value="TB">Top-Bottom</option>
+  <option value="BT">Bottom-Top</option>
+</select>
+<button style=display:block;width:50%;position:absolute onclick=download('graph.dot',dot)>Download DOT</button>
+<button style=display:block;width:50%;position:absolute;right:0 onclick=download('graph.svg',document.getElementById('graph').innerHTML)>Download SVG</button>
+<p style=position:fixed;bottom:0;background:#fffc>See this project on <a href=https://github.com/maumagnaguagno/Timeline>GitHub</a><br>Made by <a href=https://github.com/maumagnaguagno>Mau Magnaguagno</a></p>
+</header>
+<div id=graph></div>
+<script src=https://d3js.org/d3.v6.min.js></script>
+<script src=https://unpkg.com/@hpcc-js/wasm@1.4.1/dist/index.min.js type=javascript/worker></script>
+<script src=https://unpkg.com/d3-graphviz@4.0.0/build/d3-graphviz.min.js></script>
+<script>
+const params = new URLSearchParams(window.location.search);
+const from = params.get("from") || "https://raw.githubusercontent.com/Maumagnaguagno/Timeline/master/README.md";
+fetch(from).then(r => r.text()).then(t => document.getElementById("input").value = t);
+var dot, graphviz = d3.select("#graph").graphviz({width: window.innerWidth - 20, height: window.innerHeight - 20, fit: true}).on("initEnd", render);
+function render() {
+  var lines = document.getElementById("input").value.split("\n"), nodes = {}, url = {}, node_counter = 0, cluster_counter = 0;
+  dot = "digraph timeline {\n  rankdir=" + document.getElementById("dir").value + "\n  nodesep=0.15\n  node [target=_blank]\n\n";
+  for(var i = 0; i < lines.length; ++i) {
+    // Node
+    if(m = lines[i].match(/^-\s*\[(.+)\]\s*(.*)/)) {
+      nodes[m[1]] ||= [];
+      nodes[m[1]].push("node_" + node_counter);
+      dot += "    node_" + node_counter + " [shape=box label=\"" + [m[1]].concat(m[2] ? m[2].split(/\s+/) : []).join("\n") + "\"" + (url[m[1]] || "") + "]\n";
+      node_counter += 1;
+    // Cluster
+    } else if(m = lines[i].match(/^##\s+(.*)/)) {
+      // Close previous cluster
+      if(cluster_counter) dot += "  }\n\n";
+      dot += "  subgraph cluster_" + cluster_counter + " {\n    label=\"" + m[1] + "\"\n    order_node_" + cluster_counter + " [shape=point height=0 style=invis]\n";
+      cluster_counter += 1;
+    // URL and tooltip
+    } else if(m = lines[i].match(/^\[(.+)\]:\s+(\S+)(?:\s+("[^"]+"))?$/))
+      url[m[1]] = " URL=\"" + m[2] + (m[3] ? "\" tooltip=" + m[3] : "\"");
+  }
+  // Close last cluster
+  if(cluster_counter) dot += "  }\n";
+  // Add edges between nodes
+  const values = Object.values(nodes);
+  for(var i = 0; i < values.length; ++i) if(values[i].length > 1) dot += "\n  " + values[i].join(" -> ");
+  // Add invisible edges between clusters to enforce order
+  dot += "\n";
+  for(var i = 0; i < cluster_counter - 1; ++i) dot += "\n  order_node_" + i + " -> order_node_" + (i + 1) + " [style=invis]";
+  graphviz.renderDot(dot += "\n}");
+}
+function download(filename, text) {
+  var element = document.createElement("a");
+  element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(text));
+  element.setAttribute("download", filename);
+  element.style.display = "none";
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+}
+window.onresize = function() { d3.select("#graph").selectWithoutDataPropagation("svg").attr("width", window.innerWidth - 20).attr("height", window.innerHeight - 20); };
+</script>
+</body>
+</html>

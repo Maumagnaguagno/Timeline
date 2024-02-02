@@ -12,11 +12,24 @@ Node external links are optional, but are expected to be defined before their re
 Edges between nodes of the same cluster are possible.
 Nodes defined before the first cluster are considered free.
 This README is actually a valid input, open the [raw](https://raw.githubusercontent.com/Maumagnaguagno/Timeline/master/README.md) file to see the links.
-SVG output is recommended to take full advantage of links and tooltips, see the result [here](http://maumagnaguagno.github.io/Timeline).
+
+There are two implementations available.
+The first one in Ruby reads a Markdown file and direction, ``README.md`` and ``LR`` by default, and outputs a DOT file.
+This DOT file contains a graph representation of the timeline, which can be converted into an image format by Graphviz.
+By using a combination of a HTML and SVG output one can obtain a static timeline page.
+SVG output is recommended to take full advantage of links and tooltips, see the result [here](http://maumagnaguagno.github.io/Timeline/static.html).
 
 ```Shell
 ruby timeline.rb README.md LR                   # Generate Left to Right DOT file
 ..\graphviz\bin\dot.exe README.md.dot -O -T svg # Generate SVG file
+```
+
+The second one is implemented in JavaScript and focuses on client-side rendering within the browser.
+This removes the need to install any specific tools, while adding interactivity.
+This version is able to read a Markdown file from an URL, edit, display and download their content and graph, see the result [here](http://maumagnaguagno.github.io/Timeline).
+
+```
+http://maumagnaguagno.github.io/Timeline?from=https://raw.githubusercontent.com/username/project/master/README.md
 ```
 
 [IJCAI]: http://www.ijcai.org/ "International Joint Conference on Artificial Intelligence"
