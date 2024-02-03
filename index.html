@@ -28,6 +28,7 @@
 const params = new URLSearchParams(window.location.search);
 const from = params.get("from") || "https://raw.githubusercontent.com/Maumagnaguagno/Timeline/master/README.md";
 fetch(from).then(r => r.text()).then(t => {document.getElementById("input").value = t; render()});
+document.getElementById("dir").value = params.get("dir") || "LR";
 var dot, graphviz = d3.select("#graph").graphviz({width: window.innerWidth - 20, height: window.innerHeight - 20, fit: true});
 function render() {
   var lines = document.getElementById("input").value.split("\n"), nodes = {}, url = {}, node_counter = 0, cluster_counter = 0;

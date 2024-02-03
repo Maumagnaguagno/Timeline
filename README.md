@@ -26,10 +26,10 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 
 The second one is implemented in JavaScript and focuses on client-side rendering within the browser.
 This removes the need to install any specific tools, while adding interactivity.
-This version is able to read a Markdown file from an URL, edit, display and download their content and graph, see the result [here](http://maumagnaguagno.github.io/Timeline).
+This version is able to read a Markdown file and direction from an URL query, edit, display and download their content and graph, see the result [here](http://maumagnaguagno.github.io/Timeline).
 
 ```
-http://maumagnaguagno.github.io/Timeline?from=https://raw.githubusercontent.com/username/project/master/README.md
+http://maumagnaguagno.github.io/Timeline?from=https://raw.githubusercontent.com/username/project/master/README.md&dir=LR
 ```
 
 [IJCAI]: http://www.ijcai.org/ "International Joint Conference on Artificial Intelligence"
