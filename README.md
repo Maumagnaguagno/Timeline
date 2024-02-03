@@ -32,6 +32,8 @@ This version is able to read a Markdown file and direction from an URL query, ed
 http://maumagnaguagno.github.io/Timeline?from=https://raw.githubusercontent.com/username/project/master/README.md&dir=LR
 ```
 
+Everything below is valid input for Timeline.
+
 [IJCAI]: http://www.ijcai.org/ "International Joint Conference on Artificial Intelligence"
 [UAI]: http://auai.org/ "Conference on Uncertainty in Artificial Intelligence"
 [IROS]: http://www.iros.org/ "International Conference on Intelligent Robots and Systems"
