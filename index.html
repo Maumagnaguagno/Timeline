@@ -9,12 +9,12 @@
 <header style=position:fixed;font-family:Arial,sans-serif>
 <h1 style=margin:0>Timeline</h1>
 <button style=position:absolute;right:0 onclick=render()>Generate</button>
-<textarea id=input rows=14 cols=60 style=white-space:pre></textarea>
-<select id="dir" style=display:block;width:100% onchange=render()>
-  <option value="LR">Left-Right</option>
-  <option value="RL">Right-Left</option>
-  <option value="TB">Top-Bottom</option>
-  <option value="BT">Bottom-Top</option>
+<textarea id=input rows=12 cols=60 style=white-space:pre></textarea>
+<select id=dir style=display:block;width:100% onchange=render()>
+  <option value=LR>Left-Right</option>
+  <option value=RL>Right-Left</option>
+  <option value=TB>Top-Bottom</option>
+  <option value=BT>Bottom-Top</option>
 </select>
 <button style=display:block;width:50%;position:absolute onclick=download('graph.dot',dot)>Download DOT</button>
 <button style=display:block;width:50%;position:absolute;right:0 onclick=download('graph.svg',document.getElementById('graph').innerHTML)>Download SVG</button>
@@ -33,7 +33,7 @@ var dot, graphviz = d3.select("#graph").graphviz({width: window.innerWidth - 20,
 function render() {
   var lines = document.getElementById("input").value.split("\n"), nodes = {}, url = {}, node_counter = 0, cluster_counter = 0;
   dot = "digraph timeline {\n  rankdir=" + document.getElementById("dir").value + "\n  nodesep=0.15\n  node [target=_blank]\n\n";
-  for(var i = 0; i < lines.length; ++i) {
+  for(var i = 0; i < lines.length; ++i)
     if(m = lines[i].match(/^-\s*\[(.+)\]\s*(.*)/)) { // Node
       nodes[m[1]] ||= [];
       nodes[m[1]].push("node_" + node_counter);
@@ -45,15 +45,11 @@ function render() {
       cluster_counter += 1;
     } else if(m = lines[i].match(/^\[(.+)\]:\s+(\S+)(?:\s+("[^"]+"))?$/)) // URL and tooltip
       url[m[1]] = " URL=\"" + m[2] + (m[3] ? "\" tooltip=" + m[3] : "\"");
-  }
-  // Close last cluster
   if(cluster_counter) dot += "  }\n";
-  // Add edges between nodes
   const values = Object.values(nodes);
   for(var i = 0; i < values.length; ++i) if(values[i].length > 1) dot += "\n  " + values[i].join(" -> ");
-  // Add invisible edges between clusters to enforce order
   dot += "\n";
-  for(var i = 0; i < cluster_counter - 1; ++i) dot += "\n  order_node_" + i + " -> order_node_" + (i + 1) + " [style=invis]";
+  for(var i = 0; i < cluster_counter - 1;) dot += "\n  order_node_" + i + " -> order_node_" + ++i + " [style=invis]";
   graphviz.renderDot(dot += "\n}");
 }
 function download(filename, text) {
