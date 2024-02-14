@@ -35,8 +35,7 @@ function render() {
   dot = "digraph timeline {\n  rankdir=" + document.getElementById("dir").value + "\n  nodesep=0.15\n  node [target=_blank]\n\n";
   for(var i = 0; i < lines.length; ++i)
     if(m = lines[i].match(/^-\s*\[(.+)\]\s*(.*)/)) { // Node
-      nodes[m[1]] ||= [];
-      nodes[m[1]].push("node_" + node_counter);
+      (nodes[m[1]] ||= []).push("node_" + node_counter);
       dot += "    node_" + node_counter++ + " [shape=box label=\"" + [m[1]].concat(m[2] ? m[2].split(/\s+/) : []).join("\\n") + "\"" + (url[m[1]] || "") + "]\n";
     } else if(m = lines[i].match(/^##\s+(.*)/)) { // Cluster
       if(cluster_counter) dot += "  }\n\n";
