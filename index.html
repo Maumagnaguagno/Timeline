@@ -36,12 +36,12 @@ function render() {
   for(var i = 0; i < lines.length; ++i)
     if(m = lines[i].match(/^-\s*\[(.+)\]\s*(.*)/)) { // Node
       (nodes[m[1]] ||= []).push("node_" + node_counter);
-      dot += "    node_" + node_counter++ + " [shape=box label=\"" + [m[1]].concat(m[2] ? m[2].split(/\s+/) : []).join("\\n") + "\"" + (url[m[1]] || "") + "]\n";
+      dot += "    node_" + node_counter++ + ' [shape=box label="' + [m[1]].concat(m[2] ? m[2].split(/\s+/) : []).join("\\n") + '"' + (url[m[1]] || "") + "]\n";
     } else if(m = lines[i].match(/^##\s+(.*)/)) { // Cluster
       if(cluster_counter) dot += "  }\n\n";
-      dot += "  subgraph cluster_" + cluster_counter + " {\n    label=\"" + m[1] + "\"\n    order_node_" + cluster_counter++ + " [shape=point height=0 style=invis]\n";
+      dot += "  subgraph cluster_" + cluster_counter + ' {\n    label="' + m[1] + '"\n    order_node_' + cluster_counter++ + " [shape=point height=0 style=invis]\n";
     } else if(m = lines[i].match(/^\[(.+)\]:\s+(\S+)(?:\s+("[^"]+"))?$/)) // URL and tooltip
-      url[m[1]] = " URL=\"" + m[2] + (m[3] ? "\" tooltip=" + m[3] : "\"");
+      url[m[1]] = ' URL="' + m[2] + (m[3] ? '" tooltip=' + m[3] : '"');
   if(cluster_counter) dot += "  }\n";
   const values = Object.values(nodes);
   for(var i = 0; i < values.length; ++i) if(values[i].length > 1) dot += "\n  " + values[i].join(" -> ");
