@@ -29,7 +29,7 @@ This removes the need to install any specific tools, while adding interactivity.
 This version is able to read a Markdown file and direction from an URL query, edit, display and download their content and graph, see the result [here](http://maumagnaguagno.github.io/Timeline).
 
 ```
-http://maumagnaguagno.github.io/Timeline?from=https://raw.githubusercontent.com/username/project/master/README.md&dir=LR
+http://maumagnaguagno.github.io/Timeline?from=https://maumagnaguagno.github.io/Timeline/README.md&dir=LR
 ```
 
 Everything below is valid input for Timeline.

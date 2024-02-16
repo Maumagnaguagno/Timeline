@@ -25,8 +25,7 @@
 <script src=https://unpkg.com/@hpcc-js/wasm@1.4.1/dist/index.min.js type=javascript/worker></script>
 <script src=https://unpkg.com/d3-graphviz@4.0.0/build/d3-graphviz.min.js></script>
 <script>
-const params = new URLSearchParams(window.location.search);
-const from = params.get("from") || "https://raw.githubusercontent.com/Maumagnaguagno/Timeline/master/README.md";
+const params = new URLSearchParams(window.location.search), from = params.get("from") || "README.md";
 fetch(from).then(r => r.text()).then(t => {document.getElementById("input").value = t; render()});
 document.getElementById("dir").value = params.get("dir") || (window.innerWidth >= window.innerHeight ? "LR" : "TB");
 var dot, graphviz = d3.select("#graph").graphviz({width: window.innerWidth - 20, height: window.innerHeight - 20, fit: true});
