@@ -24,12 +24,12 @@ ruby timeline.rb README.md LR                   # Generate Left to Right DOT fil
 ..\graphviz\bin\dot.exe README.md.dot -O -T svg # Generate SVG file
 ```
 
-The second one is implemented in JavaScript and focuses on client-side rendering within the browser.
+The second one is implemented in JavaScript and focuses on client-side rendering with [d3-graphviz](https://github.com/magjac/d3-graphviz).
 This removes the need to install any specific tools, while adding interactivity.
-This version is able to read a Markdown file and direction from an URL query, edit, display and download their content and graph, see the result [here](http://maumagnaguagno.github.io/Timeline).
+This version is able to read a Markdown file ([limited to GitHub](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)) and direction from an URL query, edit, display and download their content and graph, see the result [here](http://maumagnaguagno.github.io/Timeline).
 
 ```
-http://maumagnaguagno.github.io/Timeline?from=https://maumagnaguagno.github.io/Timeline/README.md&dir=LR
+https://maumagnaguagno.github.io/Timeline?from=https://maumagnaguagno.github.io/Timeline/README.md&dir=LR
 ```
 
 Everything below is valid input for Timeline.
