@@ -31,11 +31,11 @@ document.getElementById("dir").value = params.get("dir") || (window.innerWidth >
 var dot, graphviz = d3.select("#graph").graphviz({width: window.innerWidth - 20, height: window.innerHeight - 20, fit: true});
 function render() {
   var lines = document.getElementById("input").value.split("\n"), nodes = {}, url = {}, node_counter = 0, cluster_counter = 0;
-  dot = "digraph timeline {\n  rankdir=" + document.getElementById("dir").value + "\n  nodesep=0.15\n  node [target=_blank]\n\n";
+  dot = "digraph timeline {\n  rankdir=" + document.getElementById("dir").value + "\n  nodesep=0.15\n  node [shape=box target=_blank]\n\n";
   for(var i = 0; i < lines.length; ++i)
     if(m = lines[i].match(/^-\s*\[(.+)\]\s*(.*)/)) { // Node
       (nodes[m[1]] ||= []).push("node_" + node_counter);
-      dot += "    node_" + node_counter++ + ' [shape=box label="' + [m[1]].concat(m[2] ? m[2].split(/\s+/) : []).join("\\n") + '"' + (url[m[1]] || "") + "]\n";
+      dot += "    node_" + node_counter++ + ' [label="' + [m[1]].concat(m[2] ? m[2].split(/\s+/) : []).join("\\n") + '"' + (url[m[1]] || "") + "]\n";
     } else if(m = lines[i].match(/^##\s+(.*)/)) { // Cluster
       if(cluster_counter) dot += "  }\n\n";
       dot += "  subgraph cluster_" + cluster_counter + ' {\n    label="' + m[1] + '"\n    order_node_' + cluster_counter++ + " [shape=point height=0 style=invis]\n";
