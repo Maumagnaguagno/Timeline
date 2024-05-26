@@ -42,10 +42,12 @@ function render() {
     } else if(m = lines[i].match(/^\[(.+)\]:\s+(\S+)(?:\s+("[^"]+"))?$/)) // URL and tooltip
       url[m[1]] = ' URL="' + m[2] + (m[3] ? '" tooltip=' + m[3] : '"');
   if(cluster_counter) dot += "  }\n";
+  if(cluster_counter > 1) {
+    for(var i = 0; i < cluster_counter - 1;) dot += "\n  order_node_" + i++ + " ->";
+    dot += "\n  order_node_" + (cluster_counter - 1) + " [style=invis]\n";
+  }
   const values = Object.values(nodes);
   for(var i = 0; i < values.length; ++i) if(values[i].length > 1) dot += "\n  " + values[i].join(" -> ");
-  dot += "\n";
-  for(var i = 0; i < cluster_counter - 1;) dot += "\n  order_node_" + i + " -> order_node_" + ++i + " [style=invis]";
   graphviz.renderDot(dot += "\n}");
 }
 function download(filename, text) {

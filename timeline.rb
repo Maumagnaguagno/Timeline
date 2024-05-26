@@ -36,12 +36,13 @@ else
   }
   # Close last cluster
   output << "  }\n" if cluster_counter != 0
+  # Add invisible edges between clusters to enforce order
+  if cluster_counter > 1
+    cluster_counter.pred.times {|i| output << "\n  order_node_#{i} ->"}
+    output << "\n  order_node_#{cluster_counter.pred} [style=invis]\n"
+  end
   # Add edges between nodes
   nodes.each_value {|parts| output << "\n  " << parts.join(' -> ') if parts.size > 1}
-  # Add invisible edges between clusters to enforce order
-  output << "\n"
-  cluster_counter.pred.times {|i| output << "\n  order_node_#{i} -> order_node_#{i.succ} [style=invis]"}
-  output << "\n}"
   # Save file
-  File.write("#{filename}.dot", output)
+  File.write("#{filename}.dot", output << "\n}")
 end
