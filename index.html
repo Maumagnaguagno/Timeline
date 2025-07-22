@@ -30,17 +30,19 @@ fetch(from).then(r => r.text()).then(t => {document.getElementById("input").valu
 document.getElementById("dir").value = params.get("dir") || (window.innerWidth >= window.innerHeight ? "LR" : "TB");
 var dot, graphviz = d3.select("#graph").graphviz({width: window.innerWidth - 20, height: window.innerHeight - 20, fit: true});
 function render() {
-  var lines = document.getElementById("input").value.split("\n"), nodes = {}, url = {}, node_counter = 0, cluster_counter = 0;
-  dot = "digraph timeline {\n  rankdir=" + document.getElementById("dir").value + "\n  nodesep=0.15\n  node [shape=box target=_blank]\n\n";
+  var lines = document.getElementById("input").value.split("\n"), nodes = {}, info = {}, node_counter = 0, cluster_counter = 0, classcolor="";
+  dot = "digraph timeline {\n  rankdir=" + document.getElementById("dir").value + "\n  nodesep=0.15\n  node [shape=box target=_blank style=filled fillcolor=white]\n\n";
   for(var i = 0; i < lines.length; ++i)
     if(m = lines[i].match(/^-\s*\[(.+)\]\s*(.*)/)) { // Node
       (nodes[m[1]] ||= []).push("node_" + node_counter);
-      dot += "    node_" + node_counter++ + ' [label="' + [m[1]].concat(m[2] ? m[2].split(/\s+/) : []).join("\\n") + '"' + (url[m[1]] || "") + "]\n";
+      dot += "    node_" + node_counter++ + ' [label="' + [m[1]].concat(m[2] ? m[2].split(/\s+/) : []).join("\\n") + '"' + (info[m[1]] || "") + "]\n";
     } else if(m = lines[i].match(/^##\s+(.*)/)) { // Cluster
       if(cluster_counter) dot += "  }\n\n";
       dot += "  subgraph cluster_" + cluster_counter + ' {\n    label="' + m[1] + '"\n    order_node_' + cluster_counter++ + " [shape=point height=0 style=invis]\n";
     } else if(m = lines[i].match(/^\[(.+)\]:\s+(\S+)(?:\s+("[^"]+"))?$/)) // URL and tooltip
-      url[m[1]] = ' URL="' + m[2] + (m[3] ? '" tooltip=' + m[3] : '"');
+      info[m[1]] = ' URL="' + m[2] + (m[3] ? '" tooltip=' + m[3] : '"') + classcolor;
+    else if(m = lines[i].match(/^<!--(\w+)\s+(#?\w+)-->/)) // Class and color
+      classcolor = ' class="' + m[1] + '" fillcolor="' + m[2] + '"';
   if(cluster_counter) dot += "  }\n";
   if(cluster_counter > 1) {
     for(var i = 0; i < cluster_counter - 1;) dot += "\n  order_node_" + i++ + " ->";

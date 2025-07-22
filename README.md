@@ -4,11 +4,12 @@
 ![Example timeline](README.md.dot.svg)
 
 Timeline converts parts of Markdown to Graphviz [DOT](https://en.wikipedia.org/wiki/DOT_%28graph_description_language%29 "Graph description language"):
-- ``[node]: http://www.website.com "optional tooltip"`` to a node external link
+- ``<!--class color-->`` to set following nodes class and color
+- ``[node]: http://www.website.com "optional tooltip"`` to set node external link and tooltip
 - ``## cluster`` to a cluster
 - ``- [node] description`` to a node of the cluster
 
-Node external links are optional, but are expected to be defined before their respective nodes appear.
+Node class, color, external link and tooltip are optional, but are expected to be defined before their respective nodes appear.
 Edges between nodes of the same cluster are possible.
 Nodes defined before the first cluster are considered free.
 This README is actually a valid input, open the [raw](https://raw.githubusercontent.com/Maumagnaguagno/Timeline/master/README.md) file to see the links.

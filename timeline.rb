@@ -13,15 +13,16 @@ else
   dir = ARGV[1] || 'LR'
   # Setup
   nodes = Hash.new {|h,k| h[k] = []}
-  url = {}
+  info = {}
   node_counter = cluster_counter = 0
-  output = "digraph timeline {\n  rankdir=#{dir}\n  nodesep=0.15\n  node [shape=box target=_blank]\n\n"
+  classcolor = ''
+  output = "digraph timeline {\n  rankdir=#{dir}\n  nodesep=0.15\n  node [shape=box target=_blank style=filled fillcolor=white]\n\n"
   File.foreach(filename) {|line|
     case line
     # Node
     when /^-\s*\[(.+)\](.*)/
       nodes[$1] << "node_#{node_counter}"
-      output << "    node_#{node_counter} [label=\"#{$2.split.unshift($1).join('\n')}\"#{url[$1]}]\n"
+      output << "    node_#{node_counter} [label=\"#{$2.split.unshift($1).join('\n')}\"#{info[$1]}]\n"
       node_counter += 1
     # Cluster
     when /^##\s+(.*)/
@@ -31,7 +32,10 @@ else
       cluster_counter += 1
     # URL and tooltip
     when /^\[(.+)\]:\s+(\S+)(?>\s+("[^"]+"))?$/
-      url[$1] = " URL=\"#{$2}\"#{" tooltip=#{$3}" if $3}"
+      info[$1] = " URL=\"#{$2}\"#{" tooltip=#{$3}" if $3}#{classcolor}"
+    # Class and color
+    when /^<!--(\w+)\s+(#?\w+)-->/
+      classcolor = " class=\"#{$1}\" fillcolor=\"#{$2}\""
     end
   }
   # Close last cluster
