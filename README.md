@@ -35,12 +35,15 @@ https://maumagnaguagno.github.io/Timeline?from=https://maumagnaguagno.github.io/
 
 Everything below is valid input for Timeline.
 
+<!--class1 #ff8888-->
 [IJCAI]: http://www.ijcai.org/ "International Joint Conference on Artificial Intelligence"
 [UAI]: http://auai.org/ "Conference on Uncertainty in Artificial Intelligence"
+<!--class2 #88ff88-->
 [IROS]: http://www.iros.org/ "International Conference on Intelligent Robots and Systems"
 [ECAI]: https://www.ijcai-18.org/ "European Conference on Artificial Intelligence"
 [IAT]: http://wibih.unomaha.edu/wi "International Conference on Intelligent Agent Technology"
 [SBGames]: http://sbgames.org/ "Simposio Brasileiro de Games e Entretenimento Digital"
+<!--class3 #8888ff-->
 [ICRA]: http://www.icra2018.org/ "International Conference on Robotics and Automation"
 [SAC]: http://www.sigapp.org/sac/ "Symposium On Applied Computing"
 [AAAI]: http://www.aaai.org/Conferences/conferences.php "Association for the Advancement of Artificial Intelligence"
@@ -49,7 +52,9 @@ Everything below is valid input for Timeline.
 [ICAPS]: http://www.icaps-conference.org/ "International Conference on Automated Planning and Scheduling"
 [AAMAS]: http://www.ifaamas.org/ "International Conference on Autonomous Agents and Multiagent Systems"
 [FLAIRS]: http://www.flairs.com/ "Florida Artificial Intelligence Research Society"
+<!--class2 #88ff88-->
 [KR]: http://www.kr.org/ "International Conference on Principles of Knowledge Representation and Reasoning"
+<!--class1 #ff8888-->
 [ICLP]: https://www.cs.nmsu.edu/ALP/iclp2018/ "International Conference on Logic Programming"
 
 ## January
