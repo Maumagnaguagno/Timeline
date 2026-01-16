@@ -6,11 +6,12 @@
 #-----------------------------------------------
 
 if ARGV[0] == '-h'
-  puts 'ruby timeline.rb [filename=README.md] [dir=LR]'
+  puts 'ruby timeline.rb [filename=README.md] [dir=LR] [format=nil]'
 else
   # Arguments
   filename = ARGV[0] || 'README.md'
   dir = ARGV[1] || 'LR'
+  format = ARGV[2]
   # Setup
   nodes = Hash.new {|h,k| h[k] = []}
   info = {}
@@ -49,4 +50,6 @@ else
   nodes.each_value {|parts| output << "\n  " << parts.join(' -> ') if parts.size > 1}
   # Save file
   File.write("#{filename}.dot", output << "\n}")
+  # Generate image with output format
+  system("dot #{filename}.dot -O -T #{format}") if format
 end

@@ -17,6 +17,7 @@ This README is actually a valid input, open the [raw](https://raw.githubusercont
 There are two implementations available.
 The first one in Ruby reads a Markdown file and direction, ``README.md`` and ``LR`` by default, and outputs a DOT file.
 This DOT file contains a graph representation of the timeline, which can be converted into an image format by Graphviz.
+If an image format is given after direction and dot is available, it will generate the image file.
 By using a combination of a HTML and SVG output one can obtain a static timeline page.
 SVG output is recommended to take full advantage of links and tooltips, see the result [here](http://maumagnaguagno.github.io/Timeline/static.html).
 
