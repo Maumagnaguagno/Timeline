@@ -57,6 +57,8 @@ Everything below is valid input for Timeline.
 [KR]: http://www.kr.org/ "International Conference on Principles of Knowledge Representation and Reasoning"
 <!--class1 #ff8888-->
 [ICLP]: https://www.cs.nmsu.edu/ALP/iclp2018/ "International Conference on Logic Programming"
+<!--#ffa500-->
+[SBCAS]: https://www.sbcas2026.com/ "Simpósia Brasileira de Computação Aplicada à Saúde"
 
 ## January
 - [IJCAI] Abstracts
@@ -64,7 +66,8 @@ Everything below is valid input for Timeline.
 ## February
 - [ICLP] Abstracts Submission
 - [IJCAI] Submission
-
+- [SBCAS] Submission
+ 
 ## March
 - [UAI] Submission
 - [IROS] Submission
@@ -74,6 +77,7 @@ Everything below is valid input for Timeline.
 - [ECAI] Submission
 - [IAT] Submission
 - [ICLP] Notification
+- [SBCAS] Notification
 
 ## May
 - [KR] Abstracts Submission
