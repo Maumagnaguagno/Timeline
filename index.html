@@ -44,10 +44,7 @@ function render() {
     else if(m = lines[i].match(/^<!--(\w+)\s+(#?\w+)-->/)) // Class and color
       classcolor = ' class="' + m[1] + '" fillcolor="' + m[2] + '"';
   if(cluster_counter) dot += "  }\n";
-  if(cluster_counter > 1) {
-    for(var i = 0; i < cluster_counter - 1;) dot += "\n  order_node_" + i++ + " ->";
-    dot += "\n  order_node_" + (cluster_counter - 1) + " [style=invis]\n";
-  }
+  if(cluster_counter > 1) dot += Array.from({length:cluster_counter},(_,i) => "\n  order_node_" + i).join(" ->") + " [style=invis]\n";
   const values = Object.values(nodes);
   for(var i = 0; i < values.length; ++i) if(values[i].length > 1) dot += "\n  " + values[i].join(" -> ");
   graphviz.renderDot(dot += "\n}");

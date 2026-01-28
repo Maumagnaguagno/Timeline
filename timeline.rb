@@ -42,10 +42,7 @@ else
   # Close last cluster
   output << "  }\n" if cluster_counter != 0
   # Add invisible edges between clusters to enforce order
-  if cluster_counter > 1
-    cluster_counter.pred.times {|i| output << "\n  order_node_#{i} ->"}
-    output << "\n  order_node_#{cluster_counter.pred} [style=invis]\n"
-  end
+  output << "#{Array.new(cluster_counter) {|i| "\n  order_node_#{i}"}.join(' ->')} [style=invis]\n" if cluster_counter > 1
   # Add edges between nodes
   nodes.each_value {|parts| output << "\n  " << parts.join(' -> ') if parts.size > 1}
   # Save file
