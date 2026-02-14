@@ -29,14 +29,14 @@ else
     when /^##\s+(.*)/
       # Close previous cluster
       output << "  }\n\n" if cluster_counter != 0
-      output << "  subgraph cluster_#{cluster_counter} {\n    label=\"#{$1}\"\n    order_node_#{cluster_counter} [shape=point height=0 style=invis]\n"
+      output << "  subgraph cluster_#{cluster_counter} {\n    label=\"#$1\"\n    order_node_#{cluster_counter} [shape=point height=0 style=invis]\n"
       cluster_counter += 1
     # URL and tooltip
     when /^\[(.+)\]:\s+(\S+)(?>\s+("[^"]+"))?$/
-      info[$1] = " URL=\"#{$2}\"#{" tooltip=#{$3}" if $3}#{classcolor}"
+      info[$1] = " URL=\"#$2\"#{" tooltip=#$3" if $3}#{classcolor}"
     # Class and color
     when /^<!--(\w+)\s+(#?\w+)-->/
-      classcolor = " class=\"#{$1}\" fillcolor=\"#{$2}\""
+      classcolor = " class=\"#$1\" fillcolor=\"#$2\""
     end
   }
   # Close last cluster
