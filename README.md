@@ -1,4 +1,4 @@
-# Timeline
+# Timeline [![Actions Status](https://github.com/Maumagnaguagno/Timeline/workflows/build/badge.svg)](https://github.com/Maumagnaguagno/Timeline/actions)
 **Convert Markdown timeline to Graphviz DOT**
 
 ![Example timeline](README.md.dot.svg)

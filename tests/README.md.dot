@@ -1,0 +1,134 @@
+digraph timeline {
+  rankdir=LR
+  nodesep=0.15
+  node [shape=box target=_blank style=filled fillcolor=white]
+
+  subgraph cluster_0 {
+    label="January"
+    order_node_0 [shape=point height=0 style=invis]
+    node_0 [label="IJCAI\nAbstracts" URL="http://www.ijcai.org/" tooltip="International Joint Conference on Artificial Intelligence" class="class1" fillcolor="#ff8888"]
+  }
+
+  subgraph cluster_1 {
+    label="February"
+    order_node_1 [shape=point height=0 style=invis]
+    node_1 [label="ICLP\nAbstracts\nSubmission" URL="https://www.cs.nmsu.edu/ALP/iclp2018/" tooltip="International Conference on Logic Programming" class="class1" fillcolor="#ff8888"]
+    node_2 [label="IJCAI\nSubmission" URL="http://www.ijcai.org/" tooltip="International Joint Conference on Artificial Intelligence" class="class1" fillcolor="#ff8888"]
+  }
+
+  subgraph cluster_2 {
+    label="March"
+    order_node_2 [shape=point height=0 style=invis]
+    node_3 [label="UAI\nSubmission" URL="http://auai.org/" tooltip="Conference on Uncertainty in Artificial Intelligence" class="class1" fillcolor="#ff8888"]
+    node_4 [label="IROS\nSubmission" URL="http://www.iros.org/" tooltip="International Conference on Intelligent Robots and Systems" class="class2" fillcolor="#88ff88"]
+  }
+
+  subgraph cluster_3 {
+    label="April"
+    order_node_3 [shape=point height=0 style=invis]
+    node_5 [label="IJCAI\nNotification" URL="http://www.ijcai.org/" tooltip="International Joint Conference on Artificial Intelligence" class="class1" fillcolor="#ff8888"]
+    node_6 [label="ECAI\nSubmission" URL="https://www.ijcai-18.org/" tooltip="European Conference on Artificial Intelligence" class="class2" fillcolor="#88ff88"]
+    node_7 [label="IAT\nSubmission" URL="http://wibih.unomaha.edu/wi" tooltip="International Conference on Intelligent Agent Technology" class="class2" fillcolor="#88ff88"]
+    node_8 [label="ICLP\nNotification" URL="https://www.cs.nmsu.edu/ALP/iclp2018/" tooltip="International Conference on Logic Programming" class="class1" fillcolor="#ff8888"]
+  }
+
+  subgraph cluster_4 {
+    label="May"
+    order_node_4 [shape=point height=0 style=invis]
+    node_9 [label="KR\nAbstracts\nSubmission" URL="http://www.kr.org/" tooltip="International Conference on Principles of Knowledge Representation and Reasoning" class="class2" fillcolor="#88ff88"]
+    node_10 [label="UAI\nNotification" URL="http://auai.org/" tooltip="Conference on Uncertainty in Artificial Intelligence" class="class1" fillcolor="#ff8888"]
+  }
+
+  subgraph cluster_5 {
+    label="June"
+    order_node_5 [shape=point height=0 style=invis]
+    node_11 [label="ECAI\nNotification" URL="https://www.ijcai-18.org/" tooltip="European Conference on Artificial Intelligence" class="class2" fillcolor="#88ff88"]
+    node_12 [label="IAT\nNotification" URL="http://wibih.unomaha.edu/wi" tooltip="International Conference on Intelligent Agent Technology" class="class2" fillcolor="#88ff88"]
+    node_13 [label="IROS\nNotification" URL="http://www.iros.org/" tooltip="International Conference on Intelligent Robots and Systems" class="class2" fillcolor="#88ff88"]
+  }
+
+  subgraph cluster_6 {
+    label="July"
+    order_node_6 [shape=point height=0 style=invis]
+    node_14 [label="SBGames\nAbstracts\nSubmission" URL="http://sbgames.org/" tooltip="Simposio Brasileiro de Games e Entretenimento Digital" class="class2" fillcolor="#88ff88"]
+    node_15 [label="KR\nNotification" URL="http://www.kr.org/" tooltip="International Conference on Principles of Knowledge Representation and Reasoning" class="class2" fillcolor="#88ff88"]
+  }
+
+  subgraph cluster_7 {
+    label="August"
+    order_node_7 [shape=point height=0 style=invis]
+    node_16 [label="SBGames\nNotification" URL="http://sbgames.org/" tooltip="Simposio Brasileiro de Games e Entretenimento Digital" class="class2" fillcolor="#88ff88"]
+  }
+
+  subgraph cluster_8 {
+    label="September"
+    order_node_8 [shape=point height=0 style=invis]
+    node_17 [label="ICRA\nSubmission" URL="http://www.icra2018.org/" tooltip="International Conference on Robotics and Automation" class="class3" fillcolor="#8888ff"]
+    node_18 [label="SAC\nAbstracts\nSubmission" URL="http://www.sigapp.org/sac/" tooltip="Symposium On Applied Computing" class="class3" fillcolor="#8888ff"]
+    node_19 [label="AAAI\nAbstracts\nSubmission" URL="http://www.aaai.org/Conferences/conferences.php" tooltip="Association for the Advancement of Artificial Intelligence" class="class3" fillcolor="#8888ff"]
+    node_20 [label="EUMAS\nAbstracts\nSubmission" URL="https://eumas2017.ibisc.univ-evry.fr/" tooltip="European Conference on Multi-Agent Systems" class="class3" fillcolor="#8888ff"]
+  }
+
+  subgraph cluster_9 {
+    label="October"
+    order_node_9 [shape=point height=0 style=invis]
+    node_21 [label="EUMAS\nNotification" URL="https://eumas2017.ibisc.univ-evry.fr/" tooltip="European Conference on Multi-Agent Systems" class="class3" fillcolor="#8888ff"]
+    node_22 [label="ICAART\nSubmission" URL="http://www.icaart.org/" tooltip="International Conference on Agents and Artificial Intelligence" class="class3" fillcolor="#8888ff"]
+  }
+
+  subgraph cluster_10 {
+    label="November"
+    order_node_10 [shape=point height=0 style=invis]
+    node_23 [label="AAAI\nNotification" URL="http://www.aaai.org/Conferences/conferences.php" tooltip="Association for the Advancement of Artificial Intelligence" class="class3" fillcolor="#8888ff"]
+    node_24 [label="SAC\nNotification" URL="http://www.sigapp.org/sac/" tooltip="Symposium On Applied Computing" class="class3" fillcolor="#8888ff"]
+    node_25 [label="ICAPS\nAbstracts\nSubmission" URL="http://www.icaps-conference.org/" tooltip="International Conference on Automated Planning and Scheduling" class="class3" fillcolor="#8888ff"]
+    node_26 [label="AAMAS\nAbstracts\nSubmission" URL="http://www.ifaamas.org/" tooltip="International Conference on Autonomous Agents and Multiagent Systems" class="class3" fillcolor="#8888ff"]
+    node_27 [label="FLAIRS\nSubmission" URL="http://www.flairs.com/" tooltip="Florida Artificial Intelligence Research Society" class="class3" fillcolor="#8888ff"]
+    node_28 [label="ICAART\nNotification" URL="http://www.icaart.org/" tooltip="International Conference on Agents and Artificial Intelligence" class="class3" fillcolor="#8888ff"]
+  }
+
+  subgraph cluster_11 {
+    label="December"
+    order_node_11 [shape=point height=0 style=invis]
+  }
+
+  subgraph cluster_12 {
+    label="January"
+    order_node_12 [shape=point height=0 style=invis]
+    node_29 [label="ICRA\nNotification" URL="http://www.icra2018.org/" tooltip="International Conference on Robotics and Automation" class="class3" fillcolor="#8888ff"]
+    node_30 [label="ICAPS\nNotification" URL="http://www.icaps-conference.org/" tooltip="International Conference on Automated Planning and Scheduling" class="class3" fillcolor="#8888ff"]
+    node_31 [label="AAMAS\nNotification" URL="http://www.ifaamas.org/" tooltip="International Conference on Autonomous Agents and Multiagent Systems" class="class3" fillcolor="#8888ff"]
+    node_32 [label="FLAIRS\nNotification" URL="http://www.flairs.com/" tooltip="Florida Artificial Intelligence Research Society" class="class3" fillcolor="#8888ff"]
+  }
+
+  order_node_0 ->
+  order_node_1 ->
+  order_node_2 ->
+  order_node_3 ->
+  order_node_4 ->
+  order_node_5 ->
+  order_node_6 ->
+  order_node_7 ->
+  order_node_8 ->
+  order_node_9 ->
+  order_node_10 ->
+  order_node_11 ->
+  order_node_12 [style=invis]
+
+  node_0 -> node_2 -> node_5
+  node_1 -> node_8
+  node_3 -> node_10
+  node_4 -> node_13
+  node_6 -> node_11
+  node_7 -> node_12
+  node_9 -> node_15
+  node_14 -> node_16
+  node_17 -> node_29
+  node_18 -> node_24
+  node_19 -> node_23
+  node_20 -> node_21
+  node_22 -> node_28
+  node_25 -> node_30
+  node_26 -> node_31
+  node_27 -> node_32
+}

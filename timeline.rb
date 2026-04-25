@@ -4,6 +4,8 @@
 #-----------------------------------------------
 # Mau Magnaguagno
 #-----------------------------------------------
+# Convert Markdown timeline to Graphviz DOT
+#-----------------------------------------------
 
 if ARGV[0] == '-h'
   puts 'ruby timeline.rb [filename=README.md] [dir=LR] [format=nil]'
