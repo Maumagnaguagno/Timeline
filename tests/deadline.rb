@@ -26,6 +26,7 @@ class Deadline < Test::Unit::TestCase
   def test_timeline_dot_generation_with_pdf
     output_dot_filename = 'README.md.dot'
     output_pdf_filename = 'README.md.dot.pdf'
+    omit('Graphviz dot not installed') unless system('dot -V')
     File.delete(output_dot_filename) if File.exist?(output_dot_filename)
     File.delete(output_pdf_filename) if File.exist?(output_pdf_filename)
     system('ruby timeline.rb README.md LR pdf')
