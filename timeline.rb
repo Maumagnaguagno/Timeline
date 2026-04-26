@@ -50,5 +50,5 @@ else
   # Save file
   File.write("#{filename}.dot", output << "\n}")
   # Generate image with output format
-  system("dot #{filename}.dot -O -T #{format}") if format
+  system("dot #{filename}.dot -O -T #{format}") or abort('Graphviz dot not found!') if format
 end
